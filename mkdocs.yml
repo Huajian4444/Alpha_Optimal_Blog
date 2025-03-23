@@ -11,8 +11,8 @@ theme:
 nav:
   - 首页: index.md
   - 管理员指南: 
-    - 管理员篇首页: Admin\index.md
+    - 管理员篇首页: Admin/index.md
   - 用户指南: 
-    - 用户篇首页: User\index.md
-  - 其它: Other\index.md
+    - 用户篇首页: User/index.md
+  - 其它: Other/index.md
   - 关于: about.md
