@@ -6,9 +6,7 @@ theme:
     scheme: default
   logo: "image/AlphaOptimal.png"
   language: zh
-  icon:
-    previous: fontawesome/solid/angle-left
-    next: fontawesome/solid/angle-right
+
   
 nav:
   - 首页: home.md
