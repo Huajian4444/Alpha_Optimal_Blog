@@ -1,4 +1,20 @@
-site_name: My site
-site_url: https://mydomain.org/mysite
+site_name: Alpha Optimal 手册
+
 theme:
   name: material
+  palette:
+    scheme: default
+  logo: "image/AlphaOptimal.png"
+  language: zh
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  
+nav:
+  - 首页: home.md
+  - 管理员指南: 
+    - 管理员篇首页: Admin\AdminGuide.md
+  - 用户指南: 
+    - 用户篇首页: User\UserGuide.md
+  - 其它: Other\Other.md
+  - 关于: about.md
