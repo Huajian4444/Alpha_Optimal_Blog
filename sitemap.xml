@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/</loc>
+         <lastmod>2025-03-23</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/about/</loc>
+         <lastmod>2025-03-23</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/Admin/AdminGuide/</loc>
+         <lastmod>2025-03-23</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/Other/Other/</loc>
+         <lastmod>2025-03-23</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/User/UserGuide/</loc>
+         <lastmod>2025-03-23</lastmod>
+    </url>
 </urlset>
