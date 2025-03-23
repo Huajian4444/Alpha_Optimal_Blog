@@ -1,0 +1,11 @@
+/* 修改未激活 tab 的背景色和文字颜色 */
+.md-header-nav .md-header-nav__link {
+    background-color: #30ac6e; /* 自定义背景色 */
+    color: #333333;          /* 自定义文字颜色 */
+  }
+  
+  /* 修改激活状态 (当前选中) 的 tab */
+  .md-header-nav .md-header-nav__link--active {
+    background-color: #007ACC !important; /* 自定义激活背景色 */
+    color: #ffffff !important;              /* 自定义激活文字颜色 */
+  }
