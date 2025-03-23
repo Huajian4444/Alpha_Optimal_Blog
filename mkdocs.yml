@@ -1,4 +1,4 @@
-site_name: Alpha Optimal 手册
+site_name: Alpha Optimal 
 site_url: "https://huajian4444.github.io/Alpha_Optimal_Blog/"
 
 theme:
@@ -6,13 +6,21 @@ theme:
   palette:
     scheme: default
   logo: "image/AlphaOptimal.png"
-
+  features:
+    - navigation.tabs
   
+extra_css:
+  - css/custom.css
+
 nav:
-  - 首页: index.md
-  - 管理员指南: 
-    - 管理员篇首页: Admin/index.md
-  - 用户指南: 
-    - 用户篇首页: User/index.md
-  - 其它: Other/index.md
+  - 主页: index.md
+  - 特性: features.md
+  - 产品:
+    - 产品: 
+      - 产品说明: products\index.md
+      - 产品手册: products\ProductGuide.md
+  - 用户手册:
+    - 手册: 
+      - 手册说明: documents\index.md
+      - 管理员手册: documents\admin\AdminGuide.md
   - 关于: about.md
