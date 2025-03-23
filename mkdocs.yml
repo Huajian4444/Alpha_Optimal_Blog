@@ -1,4 +1,5 @@
 site_name: Alpha Optimal 手册
+site_url: "https://huajian4444.github.io/Alpha_Optimal_Blog/"
 
 theme:
   name: material
@@ -8,7 +9,7 @@ theme:
 
   
 nav:
-  - 首页: home.md
+  - 首页: index.md
   - 管理员指南: 
     - 管理员篇首页: Admin\AdminGuide.md
   - 用户指南: 
