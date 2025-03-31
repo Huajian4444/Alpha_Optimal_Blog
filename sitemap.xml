@@ -2,30 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/about/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/features/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/documents/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/documents/ChainAndAxisId/</loc>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/documents/CoordinateSystem/</loc>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/documents/IsoFormat/</loc>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/documents/admin/AdminGuide/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/documents/user/UserGuide/</loc>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/products/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
     <url>
          <loc>https://huajian4444.github.io/Alpha_Optimal_Blog/products/ProductGuide/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-31</lastmod>
     </url>
 </urlset>
