@@ -1,4 +1,4 @@
-# 欢迎使用 Alpha Optimal
+# 东莞市瑞凡软件有限公司
 
 ---
 
@@ -11,22 +11,30 @@
 
 ## 背景
 
-> **背景说明：**  
-> 我们的主开发人员在该行业拥有十几年的丰富经验，是国内首批从事木材多轴加工领域的专家。  
-> 他对软件使用和木材加工工艺具有深刻的理解。  
-> 本软件正是结合了他在软件开发、木材加工工艺和现场生产等方面的专业经验而研发的。
+> 主开发人员在该行业拥有十几年的丰富经验，是国内首批从事木材多轴加工领域的专家，对于木材加工工艺有着深刻的理解和丰富的加工经验。本软件正是结合了他在软件开发、木材加工工艺和现场生产等方面的专业经验而研发的。
+
 
 ---
 
-## 理念
-
-> **我们的理念：**  
-> - 稳定  
-> - 简单  
-> - 易用  
-> - 好用  
-> - 高效
+## 特性
+> - 好用 易用 稳定 高效 定制化
 
 ## 地址
 > 地址:广东省东莞市松山湖园区总部三路20号1栋215室   
-> 联系方式:
+> 联系方式: 138 0963 5904
+
+
+## 合作伙伴
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <div style="width: 100px; height: 100px;">
+    <img src="image/partners/partner1.jpg" alt="合作伙伴1" style="width:100%; height:100%; object-fit: cover;">
+  </div>
+  <div style="width: 100px; height: 100px;">
+    <img src="image/partners/partner2.jpg" alt="合作伙伴2" style="width:100%; height:100%; object-fit: cover;">
+  </div>
+  <div style="width: 100px; height: 100px;">
+    <img src="image/partners/partner3.jpg" alt="合作伙伴3" style="width:100%; height:100%; object-fit: cover;">
+  </div>
+  <!-- 添加更多合作伙伴图片 -->
+</div>
