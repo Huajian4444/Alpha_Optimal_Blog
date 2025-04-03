@@ -20,11 +20,13 @@ nav:
   - 产品特性:
     - Alpha Optimal: products/index.md
   - Alpha Optimal文档:
-      - 安装说明: documents/index.md
-      - 管理员手册: documents/admin/AdminGuide.md
-      - 用户手册: documents/user/UserGuide.md
+      - 安装说明: userDocument/index.md
+      - 主要目录: userDocument/MainCatalog.md
+      - 配置文件编辑器: userDocument/machineConfigEditor/ConfigEditorInterface.md
+      - 用户手册: userDocument/UserGuide.md
       - 其它:
-        - Iso代码格式要求: documents/IsoFormat.md
-        - 坐标系区分: documents/CoordinateSystem.md
-        - 运动链和轴Id解释: documents/ChainAndAxisId.md
+        - Iso代码格式要求: userDocument/IsoFormat.md
+        - 坐标系区分: userDocument/CoordinateSystem.md
+        - 运动链和轴Id解释: userDocument/ChainAndAxisId.md
+        - 图示参数: userDocument/ParameterExplanation.md
   - 关于: about.md
