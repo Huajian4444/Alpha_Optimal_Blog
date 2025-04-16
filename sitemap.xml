@@ -25,6 +25,10 @@
          <lastmod>2025-04-16</lastmod>
     </url>
     <url>
+         <loc>https://www.alpha-optimal.com/userDocument/ConfigEditorInterface/</loc>
+         <lastmod>2025-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://www.alpha-optimal.com/userDocument/CoordinateSystem/</loc>
          <lastmod>2025-04-16</lastmod>
     </url>
@@ -61,7 +65,19 @@
          <lastmod>2025-04-16</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor/</loc>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_1/</loc>
+         <lastmod>2025-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_2/</loc>
+         <lastmod>2025-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_3/</loc>
+         <lastmod>2025-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_4/</loc>
          <lastmod>2025-04-16</lastmod>
     </url>
     <url>
@@ -69,7 +85,11 @@
          <lastmod>2025-04-16</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/machineConfigEditor/ConfigEditorInterface/</loc>
+         <loc>https://www.alpha-optimal.com/userDocument/User_Fixture_Example_1/</loc>
+         <lastmod>2025-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://www.alpha-optimal.com/userDocument/User_Fixture_Example_2/</loc>
          <lastmod>2025-04-16</lastmod>
     </url>
 </urlset>
