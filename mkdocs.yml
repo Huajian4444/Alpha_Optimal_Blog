@@ -24,13 +24,16 @@ nav:
       - 安装说明: userDocument/InstallationWizard.md
       - 管理员篇:
         - 主要目录: userDocument/MainCatalog.md
-        - 配置文件编辑器: userDocument/machineConfigEditor/ConfigEditorInterface.md
+        - 配置文件编辑器: userDocument/ConfigEditorInterface.md
         - 机床调试:
           - 校正工件坐标原点: userDocument/CalibrationWorkpieceCoordinate.md
           - 快速获取用户坐标: userDocument/QuickGetUserCoordinate.md
           - RTCP参数调试: userDocument/RTCPParameterDebug.md
         - 用户夹具:
-          - 夹具编辑器: userDocument/UserFixtureEditor.md
+          - 进入用户夹具编辑器: userDocument/UserFixtureEditor_1.md
+          - 参数解释->夹具数据: userDocument/UserFixtureEditor_2.md
+          - 参数解释->调整块数据: userDocument/UserFixtureEditor_3.md
+          - 参数解释->运动块: userDocument/UserFixtureEditor_4.md
         - 后处理器:
           - 自定义后处理器: userDocument/PostProcessor.md
           - 从旧版本提取加工模式: userDocument/ExtractByConfig.md
@@ -42,5 +45,10 @@ nav:
         - 坐标系区分: userDocument/CoordinateSystem.md
         - 运动链和轴Id解释: userDocument/ChainAndAxisId.md
         - 图示参数: userDocument/ParameterExplanation.md
+
+      - 示例:
+        - 用户夹具示例1: userDocument/User_Fixture_Example_1.md
+        - 用户夹具示例1: userDocument/User_Fixture_Example_2.md
+
         
   - 关于: about.md
