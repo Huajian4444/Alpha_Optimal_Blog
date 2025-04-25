@@ -4,6 +4,7 @@ site_description: "东莞市瑞凡软件有限公司，专注于仿真优化软�
 
 theme:
   name: material
+  language: zh
   palette:
     scheme: default
     primary: '#002E5D'         # 主色调为蓝色，可以根据需要调整
@@ -17,15 +18,27 @@ theme:
     - navigation.tabs
     - navigation.instant    # 快速切换页面体验
     - header.autohide
+  markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - offline
+
 
 # 如有自定义样式也可开启 extra_css
-#extra_css:
-  #- css/custom.css
+extra_css:
+  - css/custom.css
+
+extra:
+  homepage: https://www.alpha-optimal.com
 
 nav:
   - 主页: index.md
   - 产品特性:
-      - Alpha Optimal: products/index.md
+      - 特性: products/index.md
+      - 为什么要用AlphaOptimal: products/WhyUseAlphaOptimal.md
   - Alpha Optimal文档:
       - 文档说明: userDocument/index.md
       - 安装说明: userDocument/InstallationWizard.md
