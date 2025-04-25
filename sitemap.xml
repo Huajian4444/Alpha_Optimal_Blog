@@ -1,95 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://www.alpha-optimal.com/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/index.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/about/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/about.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/products/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/products/index.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/products/WhyUseAlphaOptimal.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/CalibrationWorkpieceCoordinate/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/index.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/ChainAndAxisId/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/CalibrationWorkpieceCoordinate.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/ConfigEditorInterface/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/ChainAndAxisId.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/CoordinateSystem/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/ConfigEditorInterface.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/ExtractByConfig/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/CoordinateSystem.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/InstallationWizard/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/ExtractByConfig.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/IsoFormat/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/InstallationWizard.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/MainCatalog/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/IsoFormat.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/ParameterExplanation/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/MainCatalog.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/PostProcessor/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/ParameterExplanation.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/QuickGetUserCoordinate/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/PostProcessor.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/RTCPParameterDebug/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/QuickGetUserCoordinate.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_1/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/RTCPParameterDebug.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_2/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_1.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_3/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_2.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_4/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_3.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/UserGuide/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/UserFixtureEditor_4.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/User_Fixture_Example_1/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/UserGuide.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
     <url>
-         <loc>https://www.alpha-optimal.com/userDocument/User_Fixture_Example_2/</loc>
-         <lastmod>2025-04-16</lastmod>
+         <loc>https://www.alpha-optimal.com/userDocument/User_Fixture_Example_1.html</loc>
+         <lastmod>2025-04-25</lastmod>
+    </url>
+    <url>
+         <loc>https://www.alpha-optimal.com/userDocument/User_Fixture_Example_2.html</loc>
+         <lastmod>2025-04-25</lastmod>
     </url>
 </urlset>
