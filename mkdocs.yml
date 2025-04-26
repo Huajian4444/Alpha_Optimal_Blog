@@ -25,6 +25,8 @@ theme:
 
 plugins:
   - offline
+  - mermaid2
+      
 
 
 # 如有自定义样式也可开启 extra_css
@@ -47,7 +49,6 @@ nav:
           - 配置文件编辑器: userDocument/ConfigEditorInterface.md
           - 机床调试:
               - 校正工件坐标原点: userDocument/CalibrationWorkpieceCoordinate.md
-              - 快速获取用户坐标: userDocument/QuickGetUserCoordinate.md
               - RTCP参数调试: userDocument/RTCPParameterDebug.md
           - 用户夹具:
               - 进入用户夹具编辑器: userDocument/UserFixtureEditor_1.md
@@ -57,7 +58,10 @@ nav:
           - 后处理器:
               - 自定义后处理器: userDocument/PostProcessor.md
               - 从旧版本提取加工模式: userDocument/ExtractByConfig.md
-      - 用户篇: userDocument/UserGuide.md
+      - 用户篇: 
+              - 操作向导: userDocument/User_Operation_Guide.md
+              - 刀具管理: userDocument/User_Operation_Tool_Manager.md
+              - 快速获取用户坐标: userDocument/User_Operation_Get_UCS.md
       - 其它:
           - Iso代码格式要求: userDocument/IsoFormat.md
           - 坐标系区分: userDocument/CoordinateSystem.md
