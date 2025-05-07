@@ -29,10 +29,6 @@ plugins:
       
 
 
-# 如有自定义样式也可开启 extra_css
-extra_css:
-  - css/custom.css
-
 extra:
   homepage: https://www.alpha-optimal.com
 
@@ -61,7 +57,8 @@ nav:
       - 用户篇: 
               - 操作向导: userDocument/User_Operation_Guide.md
               - 刀具管理: userDocument/User_Operation_Tool_Manager.md
-              - 快速获取用户坐标: userDocument/User_Operation_Get_UCS.md
+              - 快速获取用户坐标的值: userDocument/User_Operation_Get_UCS.md
+              - 用户坐标系管理 : userDocument/User_Operation_UCS_Manager.md
       - 其它:
           - Iso代码格式要求: userDocument/IsoFormat.md
           - 坐标系区分: userDocument/CoordinateSystem.md
@@ -70,4 +67,5 @@ nav:
       - 示例:
           - 用户夹具示例1: userDocument/User_Fixture_Example_1.md
           - 用户夹具示例2: userDocument/User_Fixture_Example_2.md
+  - 试用版本: Authorization_Application.md
   - 关于: about.md
