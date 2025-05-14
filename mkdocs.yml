@@ -40,9 +40,19 @@ nav:
   - Alpha Optimal文档:
       - 文档说明: userDocument/index.md
       - 安装说明: userDocument/InstallationWizard.md
+      - data文件说明: userDocument/Instruction_data_file.md
+      - 配置文件编辑器: userDocument/ConfigEditorInterface.md
+      - 新建运动链: 
+          - 机型:双转头机型: 
+            - 说明: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_0.md
+            - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_1.md
+            - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_2.md
+          - 机型:单转头单转台机型:
+            - 说明: Build_Kinematic_Chain/Build_Single_Rotation_Table_0.md
+            - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Single_Rotation_Table_1.md
+            - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Single_Rotation_Table_2.md
       - 管理员篇:
-          - 主要目录: userDocument/MainCatalog.md
-          - 配置文件编辑器: userDocument/ConfigEditorInterface.md
+          - 主要目录: userDocument/MainCatalog.md          
           - 机床调试:
               - 校正工件坐标原点: userDocument/CalibrationWorkpieceCoordinate.md
               - RTCP参数调试: userDocument/RTCPParameterDebug.md
