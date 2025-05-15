@@ -12,19 +12,17 @@ theme:
   font:
     text: '宋体' # 设置为微软雅黑，更符合国内网站风格
   logo: "image/AlphaOptimal.png"
-  nav_title: ""             # 隐藏主页顶部的“主页”字样
   toc: false                # 全局关闭右侧 Table of Contents
   features:
     - navigation.tabs
     - navigation.instant    # 快速切换页面体验
     - header.autohide
   markdown_extensions:
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
 
 plugins:
-  - offline
   - mermaid2
       
 
@@ -33,7 +31,7 @@ extra:
   homepage: https://www.alpha-optimal.com
 
 nav:
-  - 主页: index.md
+  - 首页: index.md
   - 产品特性:
       - 特性: products/index.md
       - 为什么要用AlphaOptimal: products/WhyUseAlphaOptimal.md

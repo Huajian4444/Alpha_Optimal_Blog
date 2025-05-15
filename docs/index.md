@@ -1,51 +1,122 @@
+<style>
+  body {
+    font-family: 'Segoe UI', '微软雅黑', 'Arial', sans-serif;
+    background: #f7fafd;
+    color: #222;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.2rem 0.5rem;
+  }
+  .main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a4fa0;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 1rem;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  .about-section, .feature-section, .contact-section {
+    background: #fff;
+    border-radius: 6px;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 1px 4px rgba(30,80,200,0.03);
+  }
+  .about-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .about-flex img {
+    width: 120px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(30,80,200,0.06);
+    background: #eaf1fb;
+  }
+  .about-text {
+    flex: 1;
+    font-size: 0.98rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 1rem 0 0 0;
+  }
+  .feature-item {
+    flex: 1 1 120px;
+    background: #f7fafd;
+    border-left: 2px solid #4a90e2;
+    padding: 0.7rem 0.7rem 0.7rem 1rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    min-width: 100px;
+  }
+  .contact-section p {
+    margin: 0.3rem 0;
+    font-size: 0.98rem;
+  }
+  @media (max-width: 700px) {
+    .about-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-flex img {
+      margin-bottom: 0.7rem;
+    }
+    .feature-list {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>
 
-## 关于我们
----
+<div class="container">
+  <div class="main-title">Alpha Optimal 多轴仿真优化平台</div>
+  <div class="subtitle">专注高端制造 · 智能 · 高效 · 稳定</div>
 
-<div style="display: flex; align-items: center;">
+  <section class="about-section">
+    <div class="about-flex">
+      <img src="./image/中汇世银大厦.jpg" alt="公司大楼">
+      <div class="about-text">
+        瑞凡软件位于东莞松山湖高新技术开发区，专注于多轴仿真优化软件的研发与创新。<br>
+        <b>Alpha Optimal</b> 软件已被广泛应用于非金属多轴加工领域，年交付超百套，为全球客户提供优化仿真解决方案。
+      </div>
+    </div>
+  </section>
 
-  <div style="flex: 0 0 auto; margin-right: 10px;">
-    <img src="./image/中汇世银大厦.jpg" alt="演示机型" style="max-width: 300px; height: auto;">
-  </div>
+  <section class="feature-section">
+    <div style="font-weight:600;font-size:1.05rem;color:#1a4fa0;margin-bottom:0.7rem;">核心优势</div>
+    <div class="feature-list">
+      <div class="feature-item">多轴联动完全仿真</div>
+      <div class="feature-item">智能碰撞检测</div>
+      <div class="feature-item">工艺参数优化</div>
+      <div class="feature-item">自定义机床&夹具</div>
+    </div>
+    <div style="margin-top:0.7rem;color:#4a90e2;font-size:0.95rem;">
+      支持标准机床与特殊定制设备的全流程数字化，显著提升设备利用率与生产效率。
+    </div>
+  </section>
 
-  <script>
-    document.querySelectorAll('div[style*="display: flex"] > div[style*="margin-left: 10px"]').forEach(function(el) {
-        el.style.alignSelf = 'flex-start';
-    });
-  </script>
-
-  <div style="flex: 2;">
-    瑞凡软件位于东莞市松山湖总部三路。是一家从事多轴仿真优化软件开发、销售的公司。主要业务是销售自研的Alpha Optimal多轴优化仿真软件 和 给客户提供定制化机型的优化仿真软件.</p>    
-    目前公司的主要经营范围在珠三角区域，在俄罗斯也有软件代理商。我们每年大约交付100套，其中超过90%来自木材加工设备供应商，其它10%来自于复合材料加工设备供应商.    </p>   
-    公司成立之前，主要从事多轴加工设备的应用。多年来在行业里面的实践，对于缺乏专用软件而产生的问题，认识的愈发深刻，遂成立了瑞凡软件公司，期望以多年在行业沉淀的经验和专业的知识，能够给有需求的客户提供高效、易用的专用软件.  </p>    
-    公司高度重视售后服务:无论他是直接客户还是使用了我们软件的客户</p>   
-  </div>
-  
+  <section class="contact-section">
+    <div style="font-weight:600;font-size:1rem;color:#1a4fa0;margin-bottom:0.3rem;">联系我们</div>
+    <p>📍 广东省东莞市松山湖园区总部三路20号1栋215室</p>
+    <p>📞 138 0963 5904</p>
+    <p>✉️ 297380404@qq.com</p>
+    <p>🕒 工作日 9:00-18:00</p>
+  </section>
 </div>
-
-
-
----
-
-## 我们的软件
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
-    Alpha Optimal多轴仿真优化软件，提供了一个兼容性比较强的平台，也提供了自定义的工具。可以在这里面定义木材加工行业大多数的多轴加工中心机型。避免了因不同机型而要面对多款专用软件的尴尬。大多数的时候，只需要直接使用内置的配置工具，即可创建用户的机床。如果你的机床是高度定制化的，请告诉我们，我们会积极的给你开发一款量身订制的专用软件，让你的机床变得更易用、好用。
-  </div>
-  <div style="flex: 0 0 auto; margin-left: 10px;">
-    <img src="./image/演示机型.png" alt="演示机型" style="max-width: 300px; height: auto;">
-  </div>
-</div>
-
----
-
-## 我们的宗旨
-给客户提供: 好用 易用 稳定 高效 的专用软件
-
----
-
-
-
-## 地址
-> 地址:广东省东莞市松山湖园区总部三路20号1栋215室   
-> 联系方式: 138 0963 5904
