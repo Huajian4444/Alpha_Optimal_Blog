@@ -1,30 +1,17 @@
 # 用户篇 - 用户坐标系(UCS)
 
 **强烈建议先看完下列文字内容后再观看视频**  
-[多用户坐标系用法视频讲解](../videos/用户坐标系用法示例.mp4)
+[观看:多用户坐标系用法视频讲解](../videos/用户坐标系用法示例.mp4)
 
 > UCS:User Coordinate System 用户坐标系.它用来定义加工程序的位置.对应CAM编程里面的MCS   
 
 
 
-```mermaid
-
----
-title: 坐标系结构
----
-
-
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-    markdown["工件坐标系:WCS"]
-    newLines["`
-    用户坐标系:UCS 0 (默认)
-    用户坐标系:UCS 1
-    用户坐标系:UCS 2
-    `"]
-    markdown --> newLines
-
-```
+| 工件坐标系 (WCS) | 用户坐标系       |
+|----------------|------------------|
+| WCS            | UCS 0 (默认)     |
+|                | UCS 1          |
+|                | UCS 2          |
 
 
 ## 进入用户坐标系管理
