@@ -23,7 +23,6 @@
    - **工序起始序列->刀轨开始->添加:定制命令**     
     ![定制命令](../image/NXPostProcessor/添加定制命令.png)  
 
-
 ```        
     # 申明全局变量
     global mom_tool_diameter #刀具直径

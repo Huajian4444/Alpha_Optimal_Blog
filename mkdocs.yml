@@ -1,22 +1,22 @@
 site_name: 东莞市瑞凡软件有限公司
-site_url: "https://www.alpha-optimal.com"
+site_url: http://www.alpha-optimal.com
 site_description: "东莞市瑞凡软件有限公司，专注于仿真优化软件的开发和应用"
 
 theme:
   name: material
-  language: zh
+  language: en
   palette:
-    scheme: default
-    primary: '#002E5D'         # 主色调为蓝色，可以根据需要调整
-    accent: 'light blue'    # 辅助色为浅蓝
+    scheme: lime
   font:
     text: '宋体' # 设置为微软雅黑，更符合国内网站风格
   logo: "image/AlphaOptimal.png"
-  toc: false                # 全局关闭右侧 Table of Contents
   features:
+    - navigation.path
     - navigation.tabs
-    - navigation.instant    # 快速切换页面体验
-    - header.autohide
+    - navigation.instant    # 快速切换页面体验 
+    - navigation.instant.prefetch
+    - navigation.top
+    - toc.integrate
   markdown_extensions:
     - pymdownx.superfences
     - pymdownx.tabbed:
@@ -28,7 +28,17 @@ plugins:
 
 
 extra:
-  homepage: https://www.alpha-optimal.com
+  homepage: http://www.alpha-optimal.com
+  alternate:
+    - name: 中文
+      link: /zh/ 
+      lang: cn
+    - name: English
+      link: /en/
+      lang: en
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - 首页: index.md
@@ -38,39 +48,45 @@ nav:
   - Alpha Optimal文档:
       - 主要目录: userDocument/index.md      
       - 安装说明: userDocument/InstallationWizard.md
-      - data文件说明: userDocument/Instruction_data_file.md
-      - 配置文件编辑器: userDocument/ConfigEditorInterface.md
-      - 新建运动链: 
-          - 机型:双转头机型: 
-            - 说明: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_0.md
-            - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_1.md
-            - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_2.md
-          - 机型:单转头单转台机型:
-            - 说明: Build_Kinematic_Chain/Build_Single_Rotation_Table_0.md
-            - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Single_Rotation_Table_1.md
-            - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Single_Rotation_Table_2.md   
-      - 机床调试:
-          - 校正工件坐标原点: userDocument/CalibrationWorkpieceCoordinate.md
-          - RTCP参数调试: userDocument/RTCPParameterDebug.md
-      - 用户夹具:
-          - 进入用户夹具编辑器: userDocument/UserFixtureEditor_1.md
-          - 参数解释->夹具数据: userDocument/UserFixtureEditor_2.md
-          - 参数解释->调整块数据: userDocument/UserFixtureEditor_3.md
-          - 参数解释->运动块: userDocument/UserFixtureEditor_4.md
-      - 后处理器:
-          - 自定义后处理器: userDocument/PostProcessor.md
-          - 从旧版本提取加工模式: userDocument/ExtractByConfig.md
-      - 快速入门: userDocument/User_Operation_Guide.md
-      - 刀具管理: userDocument/User_Operation_Tool_Manager.md
-      - 快速获取用户坐标的值: userDocument/User_Operation_Get_UCS.md
-      - 用户坐标系管理 : userDocument/User_Operation_UCS_Manager.md
-      - Iso代码格式要求: userDocument/IsoFormat.md
-      - 坐标系区分: userDocument/CoordinateSystem.md
-      - 运动链和轴Id解释: userDocument/ChainAndAxisId.md
+      - 快速入门: 
+          - 入门向导: userDocument/User_Operation_Guide.md
+          - 刀具管理: userDocument/User_Operation_Tool_Manager.md
+          - 获取用户坐标的值: userDocument/User_Operation_Get_UCS.md
+          - 用户坐标系管理 : userDocument/User_Operation_UCS_Manager.md
+      - 进阶使用: 
+          - data文件说明: userDocument/Instruction_data_file.md
+          - 配置文件编辑器: userDocument/ConfigEditorInterface.md   
+          - 用户夹具编辑器:
+              - 进入用户夹具编辑器: userDocument/UserFixtureEditor_1.md
+              - 参数解释->夹具数据: userDocument/UserFixtureEditor_2.md
+              - 参数解释->调整块数据: userDocument/UserFixtureEditor_3.md
+              - 参数解释->运动块: userDocument/UserFixtureEditor_4.md   
+          - 自定义后处理器:
+              - 自定义后处理器: userDocument/PostProcessor.md
+              - 从旧版本提取加工模式: userDocument/ExtractByConfig.md   
+          - 机床调试:
+              - 校正工件坐标原点: userDocument/CalibrationWorkpieceCoordinate.md
+              - RTCP参数调试: userDocument/RTCPParameterDebug.md             
+          
+          
+          
+          - Iso代码格式要求: userDocument/IsoFormat.md
+          - 坐标系区分: userDocument/CoordinateSystem.md
+          - 运动链和轴Id解释: userDocument/ChainAndAxisId.md
       - 图示参数: userDocument/ParameterExplanation.md
       - 示例:
-          - 用户夹具示例1: userDocument/User_Fixture_Example_1.md
-          - 用户夹具示例2: userDocument/User_Fixture_Example_2.md
+          - 用户夹具:
+              - 示例1: userDocument/User_Fixture_Example_1.md
+              - 示例2: userDocument/User_Fixture_Example_2.md
+          - 新建运动链: 
+            - 机型:双转头机型: 
+              - 说明: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_0.md
+              - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_1.md
+              - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Dual_Rotation_Chain_2.md
+            - 机型:单转头单转台机型:
+              - 说明: Build_Kinematic_Chain/Build_Single_Rotation_Table_0.md
+              - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Single_Rotation_Table_1.md
+              - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Single_Rotation_Table_2.md   
   - 试用版本: Authorization_Application.md
   - 下载和更新: download_update.md
   - 关于: about.md
