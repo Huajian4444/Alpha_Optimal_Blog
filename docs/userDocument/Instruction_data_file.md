@@ -12,8 +12,11 @@
 PreLaunchTime=10.0
 IsPreLaunch=true
 PostProcessor=UserPostProcessor/Post_Processor.xml
-IsAdaptiveEnabled=false
-AdaptiveThreshold=50000
+TrajAlgorithem=0
+TrajAlgorithemOptimal=3
+ToleranceBlend=2.0
+ToleranceBlendOptimal=100.0
+CollisionObject=0.99
 
 [MainInterface]
 BackGroundColor=0.67 0.67 0.50
