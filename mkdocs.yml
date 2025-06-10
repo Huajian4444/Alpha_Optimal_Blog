@@ -88,7 +88,10 @@ nav:
               - 说明: Build_Kinematic_Chain/Build_Single_Rotation_Table_0.md
               - 第一步->处理输入模型: Build_Kinematic_Chain/Build_Single_Rotation_Table_1.md
               - 第二步->新建配置文件: Build_Kinematic_Chain/Build_Single_Rotation_Table_2.md   
-      - 常见问题: FAQ/FAQ.md
+      - 常见问题: 
+          - FAQ/主轴预启动逻辑.md
+          - 起始&结束位置: FAQ/Program_Start_End.md
+          - FAQ/加速度转换.md
   - 试用版本: Authorization_Application.md
   - 下载和更新: download_update.md
   - 关于: about.md
