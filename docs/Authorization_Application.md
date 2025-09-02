@@ -27,6 +27,6 @@
   <input type="submit" value="提交申请" style="width:120px;height:36px;">
 </form>
 
-如需帮助，请联系我们：  
-邮箱: 297380404@qq.com  
-电话: 138-0963-5904
+
+
+**敬请关注微信公众号:AlphaOptimal**  
