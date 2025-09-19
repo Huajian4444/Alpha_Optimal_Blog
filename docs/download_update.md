@@ -2,7 +2,8 @@
 
 ---
 ## 安装程序
-- [Version:3.3.0.6](download/AlphaOptimalSetup_20250902.rar)  (版本长期支持)
+- [Version:3.4.0.0](download/AlphaOptimalSetup_20250902.rar)  (版本长期支持)
+- [Version:4.0.0.1]()
 
 
 ### 更新补丁
