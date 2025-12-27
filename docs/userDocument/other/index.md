@@ -12,6 +12,6 @@
 | UserPostProcessor           | 文件夹 | 用户后处理器，存放后处理器文件                               |
 | log.txt                     | 文件   | 日志文件，记录软件运行状态和错误信息                         |
 | toollib.json                | 文件   | 本地刀具库                                                   |
-| data.ini                    | 文件   | 用户自定义配置文件，[详细说明](Instruction_data_file.md)      |
+| data.ini                    | 文件   | 用户自定义配置文件，[详细说明](../Instruction_data_file.md)      |
 | AlphaOptimal-3.3.0.6.exe    | 文件   | 可执行文件                                                   |
 

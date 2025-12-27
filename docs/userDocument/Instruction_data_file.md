@@ -74,16 +74,16 @@ IsShowAxisInfo=false
 | IsShow3DViewerDecoration| 是否显示3D视图装饰（true/false）       |
 
 - **TabPosition** 取值示意：  
-  ![Tab默认的位置](../../image/data_images/TabWidget默认的位置.png)
+  ![Tab默认的位置](../image/data_images/TabWidget默认的位置.png)
 
 - **IsNewToolDialog**  
-    - true：![刀具列表按钮](../../image/data_images/isToolDialog.png)  
-    - false：![刀具列表按钮](../../image/data_images/isToolDialog_false.png)
+    - true：![刀具列表按钮](../image/data_images/isToolDialog.png)  
+    - false：![刀具列表按钮](../image/data_images/isToolDialog_false.png)
 
 - **IsShow3DViewerDecoration**  
     - true：有侧边栏按钮  
     - false：隐藏侧边栏按钮  
-    - ![侧边栏按钮](../../image/data_images/侧边栏按钮.png)
+    - ![侧边栏按钮](../image/data_images/侧边栏按钮.png)
 
 ---
 

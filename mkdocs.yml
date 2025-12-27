@@ -70,8 +70,7 @@ nav:
             - 示例2: userDocument/buildUserFixtureConfig/User_Fixture_Example_2.md
       - 其它:
           - 文件&文件夹说明: userDocument/other/index.md
-          - 文件详细说明:
-            - data文件说明: userDocument/other/Instruction_data_file.md
+          - data.ini文件说明: userDocument/Instruction_data_file.md
           - 自定义后处理器:
             - 自定义后处理器: userDocument/other/PostProcessor.md
             - 从旧版本提取加工模式: userDocument/other/ExtractByConfig.md   
@@ -84,6 +83,7 @@ nav:
           - 主轴预启动逻辑: FAQ/主轴预启动逻辑.md
           - 起始&结束位置: FAQ/Program_Start_End.md
           - 加速度转换: FAQ/加速度转换.md
+          - 生成ISO代码失败: FAQ/生成ISO代码失败.md
   - 试用版本: Authorization_Application.md
   - 下载和更新: download_update.md
   - 关于: about.md
