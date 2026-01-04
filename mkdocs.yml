@@ -1,14 +1,16 @@
 site_name: 东莞市瑞凡软件有限公司
-site_url: http://www.alpha-optimal.com
+site_url: http://www.alpha-optimal.com/zh/
 site_description: "东莞市瑞凡软件有限公司，专注于仿真优化软件的开发和应用"
+
+docs_dir: docs/zh
 
 theme:
   name: material
-  language: en
+  language: zh
   palette:
     scheme: lime
   font:
-    text: '宋体' # 设置为微软雅黑，更符合国内网站风格
+    text: '宋体'
   logo: "image/AlphaOptimal.png"
   features:
     - navigation.path
@@ -24,16 +26,18 @@ theme:
 
 plugins:
   - mermaid2
+  - search
       
 extra:
-  homepage: http://www.alpha-optimal.com
   alternate:
     - name: 中文
       link: /zh/ 
-      lang: cn
+      lang: zh
     - name: English
       link: /en/
       lang: en
+
+site_dir: site/en
 
 extra_css:
   - stylesheets/extra.css
@@ -48,8 +52,15 @@ nav:
       - 用户操作指引:
           - 操作视频: userDocument/videoes/videoes.md
           - 操作文档:
-            - 刀具管理: userDocument/document/ToolManager/ToolManager.md
-            - 刀具管理详解: userDocument/document/ToolManager/ToolManagerDetail.md
+            - 1.刀具管理: userDocument/document/ToolManager_ZH.md
+            - 2.导入G代码: userDocument/document/ImportGCode_ZH.md
+            - 3.程序树:
+                - 程序树概览: userDocument/document/ProgramTree_ZH.md
+                - Iso程序段处理: userDocument/document/HandleIsoItem_ZH.md
+                - 孔加工程序段处理: userDocument/document/HandleHolesItem_ZH.md
+                - 榫头&榫眼程序段处理: userDocument/document/HandleRectItem_ZH.md
+                - 桥接程序段处理: userDocument/document/HandleCurveItem_ZH.md
+            
       - 机床配置操作指引:
           - 运动链和轴Id解释: userDocument/buildMachineConfig/ChainAndAxisId.md
           - 配置文件编辑器: userDocument/buildMachineConfig/ConfigEditorInterface.md   
@@ -79,7 +90,7 @@ nav:
             - 校正工件坐标原点: userDocument/other/CalibrationWorkpieceCoordinate.md
           - RTCP参数调试: userDocument/other/RTCPParameterDebug.md             
           - Iso代码格式要求: userDocument/other/IsoFormat.md
-          - 坐标系区分: userDocument/other/CoordinateSystem.md        
+          - 坐标系详解: userDocument/other/CoordinateSystem.md        
       - 常见问题: 
           - 主轴预启动逻辑: FAQ/主轴预启动逻辑.md
           - 起始&结束位置: FAQ/Program_Start_End.md
