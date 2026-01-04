@@ -85,8 +85,8 @@
 ---
 
 
-### 过时的安装程序 和 补丁
-- [Version:3.3.0.6](download/AlphaOptimalSetup.rar)  (版本长期支持)
+### 过时的安装程序 和 补丁 **不建议下载**
+- [Version:3.3.0.6](download/AlphaOptimalSetup.rar)
 ---
 
 
