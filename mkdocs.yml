@@ -25,8 +25,6 @@ theme:
 plugins:
   - mermaid2
       
-
-
 extra:
   homepage: http://www.alpha-optimal.com
   alternate:
@@ -48,7 +46,10 @@ nav:
   - 用户文档:  
       - 安装说明: userDocument/other/InstallationWizard.md
       - 用户操作指引:
-          - 操作指引: userDocument/userOperationGuide/Instruction.md
+          - 操作视频: userDocument/videoes/videoes.md
+          - 操作文档:
+            - 刀具管理: userDocument/document/ToolManager/ToolManager.md
+            - 刀具管理详解: userDocument/document/ToolManager/ToolManagerDetail.md
       - 机床配置操作指引:
           - 运动链和轴Id解释: userDocument/buildMachineConfig/ChainAndAxisId.md
           - 配置文件编辑器: userDocument/buildMachineConfig/ConfigEditorInterface.md   
