@@ -1,0 +1,1673 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="东莞市瑞凡软件有限公司，专注于仿真优化软件的开发和应用" name="description"/>
+<link href="http://www.alpha-optimal.com/zh/document/other/UserPostProcessor/" rel="canonical"/>
+<link href="../../AdminDocument/buildUserFixtureConfig/User_Fixture_Example_2/" rel="prev"/>
+<link href="../" rel="next"/>
+<link href="javascript:translate.changeLanguage('chinese_simplified');" hreflang="zh" rel="alternate"/>
+<link href="javascript:translate.changeLanguage('english');" hreflang="en" rel="alternate"/>
+<link href="javascript:translate.changeLanguage('russian');" hreflang="ru" rel="alternate"/>
+<link href="javascript:translate.changeLanguage('turkish');" hreflang="tr" rel="alternate"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<title>自定义AlphaOptimal后处理器 - 东莞市瑞凡软件有限公司</title>
+<link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=宋体:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"宋体";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="lime" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          跳转至
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="页眉" class="md-header__inner md-grid">
+<a aria-label="东莞市瑞凡软件有限公司" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="东莞市瑞凡软件有限公司">
+<img alt="logo" src="../../../image/AlphaOptimal.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            东莞市瑞凡软件有限公司
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              自定义AlphaOptimal后处理器
+            
+          </span>
+</div>
+</div>
+</div>
+<div class="md-header__option">
+<div class="md-select">
+<button aria-label="选择当前语言" class="md-header__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+</button>
+<div class="md-select__inner">
+<ul class="md-select__list">
+<li class="md-select__item">
+<a class="md-select__link" href="javascript:translate.changeLanguage('chinese_simplified');" hreflang="zh">
+              中文
+            </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="javascript:translate.changeLanguage('english');" hreflang="en">
+              English
+            </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="javascript:translate.changeLanguage('russian');" hreflang="ru">
+              Русский
+            </a>
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="javascript:translate.changeLanguage('turkish');" hreflang="tr">
+              Türkçe
+            </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="标签" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../products/">
+          
+  
+  
+  产品特性
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../InstallationWizard/">
+          
+  
+  
+  用户文档
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Authorization_Application/">
+        
+  
+  
+    
+  
+  试用版本
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../download_update/">
+        
+  
+  
+    
+  
+  下载和更新
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../about/">
+        
+  
+  
+    
+  
+  关于
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="东莞市瑞凡软件有限公司" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="东莞市瑞凡软件有限公司">
+<img alt="logo" src="../../../image/AlphaOptimal.png"/>
+</a>
+    东莞市瑞凡软件有限公司
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    产品特性
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    产品特性
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../products/">
+<span class="md-ellipsis">
+    
+  
+    特性
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../products/WhyUseAlphaOptimal/">
+<span class="md-ellipsis">
+    
+  
+    为什么要用AlphaOptimal
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    用户文档
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    用户文档
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../InstallationWizard/">
+<span class="md-ellipsis">
+    
+  
+    安装说明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../PostProcessorOfCam/">
+<span class="md-ellipsis">
+    
+  
+    构建适用于软件的CAM后处理器
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    操作向导
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    操作向导
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    文档
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    文档
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_1" id="__nav_3_3_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    操作文档
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_3_1_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    操作文档
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/ToolManager_ZH/">
+<span class="md-ellipsis">
+    
+  
+    1.刀具管理
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/ImportGCode_ZH/">
+<span class="md-ellipsis">
+    
+  
+    2.导入G代码
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/ProgramTree_ZH/">
+<span class="md-ellipsis">
+    
+  
+    3.程序树概览
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/HandleIsoItem_ZH/">
+<span class="md-ellipsis">
+    
+  
+    4.Iso程序段处理
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/HandleHolesItem_ZH/">
+<span class="md-ellipsis">
+    
+  
+    5.孔加工程序段处理
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/HandleRectItem_ZH/">
+<span class="md-ellipsis">
+    
+  
+    6.榫头&amp;榫眼程序段处理
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/HandleCurveItem_ZH/">
+<span class="md-ellipsis">
+    
+  
+    7.桥接程序段处理
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/ImportWorkPiece_ZH/">
+<span class="md-ellipsis">
+    
+  
+    8.工件设置
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/UserCoordinateSystem_ZH/">
+<span class="md-ellipsis">
+    
+  
+    9.用户坐标系设定
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/Simulation_ZH/">
+<span class="md-ellipsis">
+    
+  
+    10.模拟
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../UserDocument/GenerateIsoCode_ZH/">
+<span class="md-ellipsis">
+    
+  
+    11.生成Iso
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_2" id="__nav_3_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    机床配置
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_2_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    机床配置
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/ChainAndAxisId/">
+<span class="md-ellipsis">
+    
+  
+    运动链和轴Id解释
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/ConfigEditorInterface/">
+<span class="md-ellipsis">
+    
+  
+    配置文件编辑器
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_2_3" id="__nav_3_3_1_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    示例:双转头机型
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_2_3_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_3_3_1_2_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    示例:双转头机型
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_0/">
+<span class="md-ellipsis">
+    
+  
+    说明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_1/">
+<span class="md-ellipsis">
+    
+  
+    第一步-&gt;处理输入模型
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_2/">
+<span class="md-ellipsis">
+    
+  
+    第二步-&gt;新建配置文件
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_2_4" id="__nav_3_3_1_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    示例:单转头单转台机型
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_2_4_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_3_3_1_2_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    示例:单转头单转台机型
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_0/">
+<span class="md-ellipsis">
+    
+  
+    说明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_1/">
+<span class="md-ellipsis">
+    
+  
+    第一步-&gt;处理输入模型
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_2/">
+<span class="md-ellipsis">
+    
+  
+    第二步-&gt;新建配置文件
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_3" id="__nav_3_3_1_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    夹具配置
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_3_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_3_1_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    夹具配置
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildUserFixtureConfig/UserFixtureEditor_1/">
+<span class="md-ellipsis">
+    
+  
+    进入用户夹具编辑器
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildUserFixtureConfig/UserFixtureEditor_2/">
+<span class="md-ellipsis">
+    
+  
+    参数解释-&gt;夹具数据
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildUserFixtureConfig/UserFixtureEditor_3/">
+<span class="md-ellipsis">
+    
+  
+    参数解释-&gt;调整块数据
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildUserFixtureConfig/UserFixtureEditor_4/">
+<span class="md-ellipsis">
+    
+  
+    参数解释-&gt;运动块
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_3_5" id="__nav_3_3_1_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    用户夹具示例
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_3_5_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_3_3_1_3_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    用户夹具示例
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildUserFixtureConfig/User_Fixture_Example_1/">
+<span class="md-ellipsis">
+    
+  
+    示例1
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../AdminDocument/buildUserFixtureConfig/User_Fixture_Example_2/">
+<span class="md-ellipsis">
+    
+  
+    示例2
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    自定义AlphaOptimal后处理器
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    自定义AlphaOptimal后处理器
+  
+
+    
+  </span>
+</a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        作用
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        后处理文件结构
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        安装路径
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regulation">
+<span class="md-ellipsis">
+      
+        Regulation 节点详解
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prepostactions">
+<span class="md-ellipsis">
+      
+        PrePostActions 节点详解:特殊机型使用.一般情况无需填写
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configulation">
+<span class="md-ellipsis">
+      
+        Configulation 节点详解
+      
+    </span>
+</a>
+<nav aria-label="Configulation 节点详解" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configulation_1">
+<span class="md-ellipsis">
+      
+        Configulation 节点属性解释
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configulation_2">
+<span class="md-ellipsis">
+      
+        Configulation 子节点解释
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_5" id="__nav_3_3_1_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    其它
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_5_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_3_1_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    其它
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    文件&amp;文件夹说明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Instruction_data_file/">
+<span class="md-ellipsis">
+    
+  
+    data.ini文件说明
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_5_3" id="__nav_3_3_1_5_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    机床调试
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_5_3_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_3_3_1_5_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    机床调试
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CalibrationWorkpieceCoordinate/">
+<span class="md-ellipsis">
+    
+  
+    校正工件坐标原点
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../RTCPParameterDebug/">
+<span class="md-ellipsis">
+    
+  
+    RTCP参数调试
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CoordinateSystem/">
+<span class="md-ellipsis">
+    
+  
+    坐标系详解
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1_6" id="__nav_3_3_1_6_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    常见问题
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_6_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_3_1_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    常见问题
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../FAQ/%E4%B8%BB%E8%BD%B4%E9%A2%84%E5%90%AF%E5%8A%A8%E9%80%BB%E8%BE%91/">
+<span class="md-ellipsis">
+    
+  
+    主轴预启动逻辑
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../FAQ/Program_Start_End/">
+<span class="md-ellipsis">
+    
+  
+    起始&amp;结束位置
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../FAQ/%E5%8A%A0%E9%80%9F%E5%BA%A6%E8%BD%AC%E6%8D%A2/">
+<span class="md-ellipsis">
+    
+  
+    加速度转换
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../FAQ/%E7%94%9F%E6%88%90ISO%E4%BB%A3%E7%A0%81%E5%A4%B1%E8%B4%A5/">
+<span class="md-ellipsis">
+    
+  
+    生成ISO代码失败
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../videoes/videoes/">
+<span class="md-ellipsis">
+    
+  
+    视频
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Authorization_Application/">
+<span class="md-ellipsis">
+    
+  
+    试用版本
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../download_update/">
+<span class="md-ellipsis">
+    
+  
+    下载和更新
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../about/">
+<span class="md-ellipsis">
+    
+  
+    关于
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<nav aria-label="导航栏" class="md-path">
+<ol class="md-path__list">
+<li class="md-path__item">
+<a class="md-path__link" href="../../..">
+<span class="md-ellipsis">
+    首页
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../InstallationWizard/">
+<span class="md-ellipsis">
+    用户文档
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../../UserDocument/ToolManager_ZH/">
+<span class="md-ellipsis">
+    操作向导
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../../UserDocument/ToolManager_ZH/">
+<span class="md-ellipsis">
+    文档
+  </span>
+</a>
+</li>
+</ol>
+</nav>
+<article class="md-content__inner md-typeset">
+<h1 id="_1">自定义后处理器</h1>
+<h3 id="_2">作用</h3>
+<p>后处理器是一套 <strong>规则</strong>，用于处理输入的加工数据(这个数据是由软件内部提供)。经过预先定义的计算和格式化，生成机床可读取和执行的代码.它是<strong>xml格式</strong></p>
+<hr/>
+<h3 id="_3">后处理文件结构</h3>
+<div class="mermaid">---
+title: 后处理文件结构
+---
+flowchart LR
+    root[root 根节点]
+    Regulation[Regulation 规则]
+    PrePostActions[PrePostActions 特殊机型]
+  Configulation[Configulation 加工模式]
+  Configulation_L[Configulation 左台面加工]
+  Configulation_R[Configulation 右台面加工]
+  Configulation_T[Configulation 串联台面加工]
+  Configulation_M[Configulation 左右台面交替加工]
+
+
+    root --&gt; Regulation
+    root --&gt; PrePostActions
+  root --&gt; Configulation
+  Configulation --&gt; Configulation_L
+  Configulation --&gt; Configulation_R
+  Configulation --&gt; Configulation_T
+  Configulation --&gt; Configulation_M
+
+</div>
+<hr/>
+<h3 id="_4">安装路径</h3>
+<p>安装目录下的 <strong>UserPostProcessor</strong> 文件夹用于存放所有后处理器文件。</p>
+<pre><code>假设软件安装路径:C:\Program Files\AlphaOptimal_v3\bin
+后处理文件夹 `UserPostProcessor` 就在bin文件夹下.具体路径:C:\Program Files\AlphaOptimal_v3\bin\UserPostProcessor
+
+</code></pre>
+<hr/>
+<h3 id="regulation">Regulation 节点详解</h3>
+<pre><code class="language-xml">&lt;Regulation Rapid="G500" OutputDir="D:/CNC" Linear="G600" Prepend="" AccelerationScheme="1" UserHeaderTail="true" MultiChain="0" EntrySequence="2;4-&gt;5;1;3" ExitSequence="3;4-&gt;5;1-&gt;2"&gt;&lt;/Regulation&gt;
+</code></pre>
+<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rapid</td>
+<td>G500</td>
+<td>开启高速高精功能，具体参数请咨询数控系统供应商</td>
+</tr>
+<tr>
+<td>OutputDir</td>
+<td>D:/CNC</td>
+<td>Iso代码的输出路径.注意windows系统： <code>\</code>  此处: <code>/</code></td>
+</tr>
+<tr>
+<td>Linear</td>
+<td>G600</td>
+<td>关闭高速高精功能，具体参数请咨询数控系统供应商</td>
+</tr>
+<tr>
+<td>Prepend</td>
+<td>（空）</td>
+<td>在每个 <code>G1</code> 前添加额外指令，例如 <code>G53</code>（部分数控系统需要）</td>
+</tr>
+<tr>
+<td>AccelerationScheme</td>
+<td>1</td>
+<td><code>0</code> 时间编程:<code>G1 X100 t0.002</code>;<code>1</code> 表示 F 编程：<code>G1 X100 F3000</code></td>
+</tr>
+<tr>
+<td>UserHeaderTail</td>
+<td>true</td>
+<td>特殊设定，一般无需修改。</td>
+</tr>
+<tr>
+<td>MultiChain</td>
+<td>0</td>
+<td>特殊设定，一般无需修改。</td>
+</tr>
+<tr>
+<td>EntrySequence</td>
+<td>1-&gt;2-&gt;4-&gt;5;3</td>
+<td>设定进刀顺序，示例：<code>1-&gt;2-&gt;4-&gt;5;3</code></td>
+</tr>
+<tr>
+<td>ExitSequence</td>
+<td>3;1-&gt;2-&gt;4-&gt;5</td>
+<td>设定退刀顺序，示例：<code>3;1-&gt;2-&gt;4-&gt;5</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>EntrySequence &amp; ExitSequence的值里面的数字代表轴的Id.<code>X=1 Y=2 Z=3 C=4 A=5</code> 详见:<a href="../../AdminDocument/buildMachineConfig/ChainAndAxisId/">轴Id和运动链</a></p>
+</li>
+<li>
+<p>EntrySequence 详解  </p>
+</li>
+<li>
+<p>示例1:EntrySequence="1-&gt;2-&gt;4-&gt;5;3"
+<br/>
+<pre>
+      零位:G1 X-1500 Y0 Z0 C0 A0 F100000  
+      起始位置:G1 X100 Y-1300 Z-500 C-50 A53.3 F100000  
+
+      最终处理结果如下:   
+      G1 X-1500 Y0 Z0 C0 A0 F100000  
+      G1 X100 Y-1300 C-50 A53.3 F100000  //移动XYCA
+      G1 Z-500  F100000                  // 移动Z坐标
+
+      // 执行效果:先移动刀具到加工起始点的Z上方,然后再移动Z到加工点
+  </pre>
+</p>
+</li>
+<li>
+<p>示例2： EntrySequence=""
+<br/>
+<pre>
+      零位:G1 X-1500 Y0 Z0 C0 A0 F100000  
+      起始位置:G1 X100 Y-1300 Z-500 C-50 A53.3 F100000  
+
+      最终处理结果如下:  
+      G1 X-1500 Y0 Z0 C0 A0 F100000  
+      G1 X100 Y-1300 Z-500 C-50 A53.3 F100000  
+
+      // 执行效果:直接一条斜线从起始点到目标点
+  </pre>
+</p>
+</li>
+<li>
+<p><strong>建议设定:EntrySequence="1-&gt;2-&gt;4-&gt;5;3"</strong></p>
+</li>
+</ul>
+<hr/>
+<ul>
+<li><strong>ExitSequence:设定退刀顺序</strong> </li>
+<li>
+<p>示例1: ExitSequence="3;1-&gt;2-&gt;4-&gt;5"
+<br/>
+<pre>
+    结束位置:G1 X100 Y-1300 Z-500 C-50 A53.3 F100000  
+    零位:G1 X-1500 Y0 Z0 C0 A0 F100000  
+
+    最终处理结果如下: 
+    G1 X100 Y-1300 Z-500 C-50 A53.3 F100000   
+    G1 Z0 F100000               // Z移动到0位
+    G1 X-1500 Y0 C0 A0 F100000  // XYCA移动到0位
+
+     // 执行效果:先移动Z到零位,然后再移动XYCA到零位
+  </pre></p>
+</li>
+<li>
+<p>示例2:ExitSequence=""
+<br/>
+<pre>
+    结束位置:G1 X100 Y-1300 Z-500 C-50 A53.3 F100000    
+    零位:G1 X-1500 Y0 Z0 C0 A0 F100000    
+    最终处理结果如下:   
+    G1 X100 Y-1300 Z-500 C-50 A53.3 F100000   
+    G1 X-1500 Y0 C0 A0 F100000  
+
+     // 执行效果:直接一条斜线 移动到零位
+  </pre>
+</p>
+</li>
+<li>
+<p><strong>建议设定: ExitSequence="3;1-&gt;2-&gt;4-&gt;5"</strong></p>
+</li>
+</ul>
+<hr/>
+<h3 id="prepostactions">PrePostActions 节点详解:特殊机型使用.一般情况无需填写</h3>
+<hr/>
+<h3 id="configulation">Configulation 节点详解</h3>
+<pre><code class="language-xml">&lt;Configulation Name="L" NickName="左台面" Prefix="" Suffix=".nc" Image="left.png" &gt;
+  &lt;Item&gt;G500&lt;/Item&gt;
+  &lt;Item&gt;(SDA)&lt;/Item&gt;
+  &lt;Item&gt;"BEGIN"&lt;/Item&gt;
+  &lt;Item&gt;(GTO,A,@TABREQNO=1)&lt;/Item&gt;
+  &lt;Item&gt;(GTO,B,@TABREQNO=2)&lt;/Item&gt;
+  &lt;Item&gt;"A"&lt;/Item&gt;
+  &lt;Item&gt;G40&lt;/Item&gt;
+  &lt;Item&gt;G90&lt;/Item&gt;
+  &lt;Item&gt;G80&lt;/Item&gt;
+  &lt;Item&gt;G27 G0&lt;/Item&gt;
+  &lt;Item&gt;M05&lt;/Item&gt;
+  &lt;Item&gt;G0 G79 Z0.0&lt;/Item&gt;
+  &lt;Item&gt;G0 G79 A0.0 C0.0 &lt;/Item&gt;
+  &lt;Coordinate&gt;G54&lt;/Coordinate&gt;
+  &lt;Item&gt;G0 Z0.0&lt;/Item&gt;
+  &lt;Item&gt;M05&lt;/Item&gt;
+  &lt;Item&gt; G0 G79 Z0.0&lt;/Item&gt;
+  &lt;Item&gt;"EXIT"&lt;/Item&gt;
+  &lt;Item&gt;G0 A0.0 C0.0&lt;/Item&gt;
+  &lt;Item&gt;(CLT,NCEND)&lt;/Item&gt;
+  &lt;Item&gt;M30&lt;/Item&gt;
+  &lt;Item&gt;  &lt;/Item&gt;
+  &lt;Item&gt;   &lt;/Item&gt;
+&lt;/Configulation&gt;
+</code></pre>
+<hr/>
+<ul>
+<li><img alt="加工模式" src="../../../image/%E5%8A%A0%E5%B7%A5%E6%A8%A1%E5%BC%8F.png"/></li>
+</ul>
+<h4 id="configulation_1">Configulation 节点属性解释</h4>
+<p><code>xml
+  &lt;Configulation Name="R" NickName="右台面" Prefix="" Suffix=".nc" Image="right.png"&gt;</code></p>
+<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>L</td>
+<td>加工模式名称，<code>L</code> 表示左台面加工模式。 <strong>格式:单个英文字母 大写</strong></td>
+</tr>
+<tr>
+<td>NickName</td>
+<td>NickName</td>
+<td>显示名称，与图标共同构成软件图标显示。</td>
+</tr>
+<tr>
+<td>Prefix</td>
+<td>Prefix_</td>
+<td>文件名<code>alphaTest</code>， 生成的文件名:<code>Prefix_alphaTest</code>。用户自定义</td>
+</tr>
+<tr>
+<td>Suffix</td>
+<td>_Suffix.nc</td>
+<td>文件名<code>alphaTest</code>， 生成的文件名:<code>alphaTest_Suffix.nc</code> 用户自定义</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>left.png</td>
+<td>显示图标，需存放于 <strong>UserPostProcessor</strong> 文件夹中。</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><img alt="属性" src="../../../image/%E5%90%8E%E5%A4%84%E7%90%86-Configuration%E5%B1%9E%E6%80%A7.png"/></p>
+</li>
+</ul>
+<p></p>
+<h4 id="configulation_2">Configulation 子节点解释</h4>
+<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item</td>
+<td>一个<code>&lt;Item&gt; &lt;/Item&gt;</code>就是一行文本.可以是任意内容</td>
+<td>按照数控系统的要求写入</td>
+</tr>
+<tr>
+<td>Coordinate</td>
+<td>对应程序树下的左台面&amp;右台面</td>
+<td>这个值必须是在机器配置文件内已经被定义的 大多数的时候是G54 G55</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>完整Configulation示例</p>
+</li>
+<li>说明<ol>
+<li>此示例使用的数控系统:OSAI</li>
+<li>机型结构:XYZCA</li>
+<li>双台面.Y V</li>
+<li>为方便理解.会在每一行后面添加注释信息. <code>//注释</code>,这个在xml文件内是不被允许的,此处仅作示例使用</li>
+</ol>
+</li>
+</ul>
+<pre><code class="language-xml">&lt;Configulation Name="L" NickName="左台面" Prefix="" Suffix=".nc" Image="left.png" &gt;
+  &lt;Item&gt;G500&lt;/Item&gt;                 // 关闭高速高精功能
+  &lt;Item&gt;(SDA)&lt;/Item&gt;                // 取消台面从动功能
+  &lt;Item&gt;G40&lt;/Item&gt;                  // 取消刀具补偿
+  &lt;Item&gt;G90&lt;/Item&gt;                  // 定义绝对编程
+  &lt;Item&gt;G80&lt;/Item&gt;                  // 取消固定循环
+  &lt;Item&gt;G27 G0&lt;/Item&gt;               // 返回参考点
+  &lt;Item&gt;M05&lt;/Item&gt;                  // 停止所有主轴旋转
+  &lt;Item&gt;G0 G79 Z0.0&lt;/Item&gt;          // Z轴返回参考点
+  &lt;Item&gt;G0 G79 A0.0 C0.0 &lt;/Item&gt;    // A C轴返回参考点
+  &lt;Item&gt;"BEGIN"&lt;/Item&gt;              // 标记:用于循环.可配合OSAI系统的GTO语句使用. (GTO,BEGIN)
+  &lt;Item&gt;(GTO,A,@TABREQNO=1)&lt;/Item&gt;  // OSAI系统的检测指令
+  &lt;Item&gt;(GTO,B,@TABREQNO=2)&lt;/Item&gt;  // OSAI系统的检测指令
+  &lt;Coordinate&gt;G54&lt;/Coordinate&gt;      // 软件标识:在此处插入Iso代码
+  &lt;Item&gt;(CLT,NCEND)&lt;/Item&gt;          // OSAI系统指令
+  &lt;Item&gt;(GTO,BEGIN)&lt;/Item&gt;          // 跳转指令.从头开始查找BEGIN这个标签.从BEGIN这重新执行
+  &lt;Item&gt;M30&lt;/Item&gt;                  // 程序结束
+  &lt;Item&gt;  &lt;/Item&gt;                   // 空行 .OSAI系统要求加工程序最后必须带2行空行.否则会报错
+  &lt;Item&gt;   &lt;/Item&gt;                  // 空行 .OSAI系统要求加工程序最后必须带2行空行.否则会报错
+&lt;/Configulation&gt;
+</code></pre>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  回到页面顶部
+</button>
+</main>
+<!-- Inject translate.js and init configuration for client-side multilingual support -->
+<!-- Source: https://github.com/jerryc127/translate.js -->
+<script src="https://cdn.staticfile.net/translate.js/3.12.0/translate.js"></script>
+<script>
+(function() {
+  // Ignore classes to avoid unwanted translation
+  translate.ignore.class.push(
+    'md-select',
+    'footer-highlight',
+    'md-footer-copyright',
+    'no-translate'
+  );
+
+  // Set default local language
+  translate.language.setLocal('chinese_simplified');
+
+  // Auto-detect user's preferred language
+  translate.setAutoDiscriminateLocalLanguage();
+
+  // Hide default language select tag from translate.js
+  translate.selectLanguageTag.show = false;
+
+  // Use client-side translation channel
+  translate.service.use('client.edge');
+
+  // Domain terminology mappings to improve accuracy
+  const nomenclatures = {
+    english: `
+多轴仿真=Multi-Axis Simulation
+多轴联动完全仿真=Full Multi-Axis Simulation
+后处理器=Post-Processor
+自定义后处理器=Custom Post-Processor
+NX后处理器=NX Post-Processor
+用户夹具=User Fixture
+夹具=Fixture
+机床=Machine Tool
+机床配置=Machine Configuration
+运动链=Kinematic Chain
+轴Id=Axis ID
+坐标系=Coordinate System
+用户坐标系=User Coordinate System
+工件=Workpiece
+工件坐标原点=Workpiece Origin
+仿真=Simulation
+智能碰撞检测=Collision Detection
+工艺参数优化=Process Parameter Optimization
+生成ISO代码=Generate ISO Code
+程序段=Program Block
+刀具管理=Tool Management
+导入G代码=Import G-Code
+程序树=Program Tree
+配置文件编辑器=Configuration File Editor
+用户夹具编辑器=User Fixture Editor
+参数=Parameters
+调整块=Adjustment Block
+运动块=Motion Block
+RTCP参数调试=RTCP Parameter Tuning
+双转头机型=Double Rotary Head Machine
+单转头单转台机型=Single Rotary Head and Table Machine
+榫头=Tenon
+榫眼=Mortise
+桥接=Bridging Curve
+`,
+    russian: `
+多轴仿真=Многоосевая симуляция
+多轴联动完全仿真=Полная многоосевая симуляция
+后处理器=Постпроцессор
+自定义后处理器=Пользовательский постпроцессор
+NX后处理器=Постпроцессор NX
+用户夹具=Пользовательская оснастка
+夹具=Оснастка
+机床=Станок
+机床配置=Конфигурация станка
+运动链=Кинематическая цепь
+轴Id=Идентификатор оси
+坐标系=Система координат
+用户坐标系=Пользовательская система координат
+工件=Заготовка
+工件坐标原点=Нулевая точка заготовки
+仿真=Симуляция
+智能碰撞检测=Обнаружение столкновений
+工艺参数优化=Оптимизация технологических параметров
+生成ISO代码=Генерация ISO-кода
+程序段=Программный блок
+刀具管理=Управление инструментом
+导入G代码=Импорт G-кода
+程序树=Дерево программы
+配置文件编辑器=Редактор конфигурации
+用户夹具编辑器=Редактор пользовательской оснастки
+参数=Параметры
+调整块=Регулировочный блок
+运动块=Подвижный блок
+RTCP参数调试=Настройка параметров RTCP
+双转头机型=Станок с двойной поворотной головой
+单转头单转台机型=Станок с одной поворотной головой и поворотным столом
+榫头=Шип
+榫眼=Паз
+桥接=Перемычка
+`,
+    turkish: `
+多轴仿真=Çok eksenli simülasyon
+多轴联动完全仿真=Tam çok eksenli simülasyon
+后处理器=Post-prosesör
+自定义后处理器=Özel post-prosesör
+NX后处理器=NX post-prosesör
+用户夹具=Kullanıcı fikstür
+夹具=Fikstür
+机床=Makine
+机床配置=Makine konfigürasyonu
+运动链=Kinematik zincir
+轴Id=Eksen kimliği
+坐标系=Koordinat sistemi
+用户坐标系=Kullanıcı koordinat sistemi
+工件=İş parçası
+工件坐标原点=İş parçası sıfır noktası
+仿真=Simülasyon
+智能碰撞检测=Çarpışma algılama
+工艺参数优化=İşleme parametrelerinin optimizasyonu
+生成ISO代码=ISO kodu oluşturma
+程序段=Program bloğu
+刀具管理=Takım yönetimi
+导入G代码=G-kodunu içe aktarma
+程序树=Program ağacı
+配置文件编辑器=Konfigürasyon dosyası düzenleyicisi
+用户夹具编辑器=Kullanıcı fikstür düzenleyicisi
+参数=Parametreler
+调整块=Ayar bloğu
+运动块=Hareket bloğu
+RTCP参数调试=RTCP parametre ayarı
+双转头机型=Çift döner kafalı makine
+单转头单转台机型=Tek döner kafalı ve döner tablalı makine
+榫头=Zıvana
+榫眼=Zıvana yuvası
+桥接=Köprüleme
+`
+  };
+
+  Object.entries(nomenclatures).forEach(([lang, terms]) => {
+    translate.nomenclature.append('chinese_simplified', lang, terms);
+  });
+
+  // Apply language-related styles on change
+  function applyLanguageStyles(lang) {
+    document.documentElement.setAttribute('data-translate-lang', lang || 'chinese_simplified');
+    if (lang === 'arabic') {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.body.classList.add('rtl-language');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+      document.body.classList.remove('rtl-language');
+    }
+  }
+
+  window.addEventListener('translate.languagechange', function(e) {
+    const lang = e && e.detail ? e.detail.language : translate.currentLanguage;
+    applyLanguageStyles(lang);
+    // Re-execute translation for dynamic content after small delay
+    setTimeout(() => translate.execute(), 300);
+  });
+
+  // Initialize translation
+  translate.execute();
+  applyLanguageStyles(translate.currentLanguage);
+})();
+</script>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.path", "navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.language", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
