@@ -1,0 +1,165 @@
+<!-- Inject translate.js and init configuration for client-side multilingual support -->
+<!-- Source: https://github.com/jerryc127/translate.js -->
+<script src="https://cdn.staticfile.net/translate.js/3.12.0/translate.js"></script>
+<script>
+(function() {
+  // Ignore classes to avoid unwanted translation
+  translate.ignore.class.push(
+    'md-select',
+    'footer-highlight',
+    'md-footer-copyright',
+    'no-translate'
+  );
+
+  // Set default local language
+  translate.language.setLocal('chinese_simplified');
+
+  // Auto-detect user's preferred language
+  translate.setAutoDiscriminateLocalLanguage();
+
+  // Hide default language select tag from translate.js
+  translate.selectLanguageTag.show = false;
+
+  // Use client-side translation channel
+  translate.service.use('client.edge');
+
+  // Domain terminology mappings to improve accuracy
+  const nomenclatures = {
+    english: `
+多轴仿真=Multi-Axis Simulation
+多轴联动完全仿真=Full Multi-Axis Simulation
+后处理器=Post-Processor
+自定义后处理器=Custom Post-Processor
+NX后处理器=NX Post-Processor
+用户夹具=User Fixture
+夹具=Fixture
+机床=Machine Tool
+机床配置=Machine Configuration
+运动链=Kinematic Chain
+轴Id=Axis ID
+坐标系=Coordinate System
+用户坐标系=User Coordinate System
+工件=Workpiece
+工件坐标原点=Workpiece Origin
+仿真=Simulation
+智能碰撞检测=Collision Detection
+工艺参数优化=Process Parameter Optimization
+生成ISO代码=Generate ISO Code
+程序段=Program Block
+刀具管理=Tool Management
+导入G代码=Import G-Code
+程序树=Program Tree
+配置文件编辑器=Configuration File Editor
+用户夹具编辑器=User Fixture Editor
+参数=Parameters
+调整块=Adjustment Block
+运动块=Motion Block
+RTCP参数调试=RTCP Parameter Tuning
+双转头机型=Double Rotary Head Machine
+单转头单转台机型=Single Rotary Head and Table Machine
+榫头=Tenon
+榫眼=Mortise
+桥接=Bridging Curve
+`,
+    russian: `
+多轴仿真=Многоосевая симуляция
+多轴联动完全仿真=Полная многоосевая симуляция
+后处理器=Постпроцессор
+自定义后处理器=Пользовательский постпроцессор
+NX后处理器=Постпроцессор NX
+用户夹具=Пользовательская оснастка
+夹具=Оснастка
+机床=Станок
+机床配置=Конфигурация станка
+运动链=Кинематическая цепь
+轴Id=Идентификатор оси
+坐标系=Система координат
+用户坐标系=Пользовательская система координат
+工件=Заготовка
+工件坐标原点=Нулевая точка заготовки
+仿真=Симуляция
+智能碰撞检测=Обнаружение столкновений
+工艺参数优化=Оптимизация технологических параметров
+生成ISO代码=Генерация ISO-кода
+程序段=Программный блок
+刀具管理=Управление инструментом
+导入G代码=Импорт G-кода
+程序树=Дерево программы
+配置文件编辑器=Редактор конфигурации
+用户夹具编辑器=Редактор пользовательской оснастки
+参数=Параметры
+调整块=Регулировочный блок
+运动块=Подвижный блок
+RTCP参数调试=Настройка параметров RTCP
+双转头机型=Станок с двойной поворотной головой
+单转头单转台机型=Станок с одной поворотной головой и поворотным столом
+榫头=Шип
+榫眼=Паз
+桥接=Перемычка
+`,
+    turkish: `
+多轴仿真=Çok eksenli simülasyon
+多轴联动完全仿真=Tam çok eksenli simülasyon
+后处理器=Post-prosesör
+自定义后处理器=Özel post-prosesör
+NX后处理器=NX post-prosesör
+用户夹具=Kullanıcı fikstür
+夹具=Fikstür
+机床=Makine
+机床配置=Makine konfigürasyonu
+运动链=Kinematik zincir
+轴Id=Eksen kimliği
+坐标系=Koordinat sistemi
+用户坐标系=Kullanıcı koordinat sistemi
+工件=İş parçası
+工件坐标原点=İş parçası sıfır noktası
+仿真=Simülasyon
+智能碰撞检测=Çarpışma algılama
+工艺参数优化=İşleme parametrelerinin optimizasyonu
+生成ISO代码=ISO kodu oluşturma
+程序段=Program bloğu
+刀具管理=Takım yönetimi
+导入G代码=G-kodunu içe aktarma
+程序树=Program ağacı
+配置文件编辑器=Konfigürasyon dosyası düzenleyicisi
+用户夹具编辑器=Kullanıcı fikstür düzenleyicisi
+参数=Parametreler
+调整块=Ayar bloğu
+运动块=Hareket bloğu
+RTCP参数调试=RTCP parametre ayarı
+双转头机型=Çift döner kafalı makine
+单转头单转台机型=Tek döner kafalı ve döner tablalı makine
+榫头=Zıvana
+榫眼=Zıvana yuvası
+桥接=Köprüleme
+`
+  };
+
+  Object.entries(nomenclatures).forEach(([lang, terms]) => {
+    translate.nomenclature.append('chinese_simplified', lang, terms);
+  });
+
+  // Apply language-related styles on change
+  function applyLanguageStyles(lang) {
+    document.documentElement.setAttribute('data-translate-lang', lang || 'chinese_simplified');
+    if (lang === 'arabic') {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.body.classList.add('rtl-language');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+      document.body.classList.remove('rtl-language');
+    }
+  }
+
+  window.addEventListener('translate.languagechange', function(e) {
+    const lang = e && e.detail ? e.detail.language : translate.currentLanguage;
+    applyLanguageStyles(lang);
+    // Re-execute translation for dynamic content after small delay
+    setTimeout(() => translate.execute(), 300);
+  });
+
+  // Initialize translation
+  translate.execute();
+  applyLanguageStyles(translate.currentLanguage);
+})();
+</script>
