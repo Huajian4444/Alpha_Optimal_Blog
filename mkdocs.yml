@@ -37,7 +37,7 @@ nav:
       - 为什么要用AlphaOptimal: products/WhyUseAlphaOptimal.md
   - 用户文档:  
       - 安装说明: document/other/InstallationWizard.md
-      - 构建适用于软件的CAM后处理器: document/other/IsoFormat.md
+      - 构建适用于软件的CAM后处理器: document/other/PostProcessorOfCam.md
       - 操作向导: 
         - 文档: 
           - 操作文档:
