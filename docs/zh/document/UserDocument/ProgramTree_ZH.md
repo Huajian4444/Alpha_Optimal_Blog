@@ -3,10 +3,10 @@
 > 程序树的职责是管理所有程序段.也提供程序起始和结束位置的设定.
 
 ## 程序段类型:
-1. Iso代码
-2. 孔加工
-3. 榫槽程序段
-4. 路径桥接
+1. Iso代码 ![Iso](../../image/iso.png)
+2. 孔加工 ![drill](../../image/drill.png)
+3. 榫槽程序段 ![tenon](../../image/tenon.png)
+4. 路径桥接 ![curve](../../image/pathCurve.png)
 
 ## 程序树的信息列
 

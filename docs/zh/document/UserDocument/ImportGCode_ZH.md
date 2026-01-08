@@ -1,9 +1,11 @@
 # **2.导入G代码**
 
-> 对于一个管理员来说.首先必须明确导入的Iso代码的正确格式.如果你时终端用户,不需要理会这个注释.如果你时设备制造商,必须对输入的Iso代码文件格式有清楚的理解并且编写正确的CAM后处理器,用于生成整个的Iso代码文件.这样才能导入到AlphaOptimal进行优化操作。</p>
-> 点击跳转: [Iso代码格式详解](../other/PostProcessorOfCam.md) </p>
->
-> 默认已经完成了刀具的设置
+
+   <span style="color:red";>对于一个管理员来说.首先必须明确导入的Iso代码的正确格式.如果你是终端用户,不需要理会这个注释.如果你时设备制造商,必须对输入的Iso代码文件格式有清楚的理解并且编写正确的CAM后处理器,用于生成整个的Iso代码文件.这样才能导入到AlphaOptimal进行优化操作 </span></p>
+   <span style="color:red";> 点击跳转: [构建适用于AlphaOptimal的CAM后处理器](../other/PostProcessorOfCam.md)</span></p>
+   <span style="color:red";>默认已经完成了刀具的设置</span>
+
+---
 
 1. 选定需要导入程序的台面
    - ![程序导入](../../image/程序导入-导入按钮.png)

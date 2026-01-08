@@ -112,5 +112,3 @@ IsShowAxisInfo=false
 | IsShowAxisInfo    | 是否显示轴信息       |
 
 ---
-
-> **提示**：大部分参数可在软件内通过“设置”界面修改，无需手动编辑 data.ini 文件。

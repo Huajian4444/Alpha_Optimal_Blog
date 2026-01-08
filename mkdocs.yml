@@ -53,11 +53,13 @@ nav:
       - 特性: products/index.md
       - 为什么要用AlphaOptimal: products/WhyUseAlphaOptimal.md
   - 用户文档:  
-      - 安装说明: document/other/InstallationWizard.md
+      - 安装向导: document/other/InstallationWizard.md
+      - 软件目录结构: document/other/DirectoryStructure.md
       - 构建适用于软件的CAM后处理器: document/other/PostProcessorOfCam.md
       - 操作向导: 
         - 文档: 
-          - 操作文档:
+          - 自定义AlphaOptimal后处理器: document/other/UserPostProcessor.md
+          - 用户文档:
               - 1.刀具管理: document/UserDocument/ToolManager_ZH.md
               - 2.导入G代码: document/UserDocument/ImportGCode_ZH.md
               - 3.程序树概览: document/UserDocument/ProgramTree_ZH.md
@@ -66,42 +68,40 @@ nav:
               - 6.榫头&榫眼程序段处理: document/UserDocument/HandleRectItem_ZH.md
               - 7.桥接程序段处理: document/UserDocument/HandleCurveItem_ZH.md
               - 8.工件设置: document/UserDocument/ImportWorkPiece_ZH.md
-              - 9.用户坐标系设定: document/UserDocument/UserCoordinateSystem_ZH.md
+              - 9.用户坐标系设定: document/UserDocument/LocationUserCoordinateSystem_ZH.md
               - 10.模拟: document/UserDocument/Simulation_ZH.md
               - 11.生成Iso: document/UserDocument/GenerateIsoCode_ZH.md
-          - 机床配置:
-              - 运动链和轴Id解释: document/AdminDocument/buildMachineConfig/ChainAndAxisId.md
-              - 配置文件编辑器: document/AdminDocument/buildMachineConfig/ConfigEditorInterface.md   
-              - 示例:双转头机型: 
-                - 说明: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_0.md
-                - 第一步->处理输入模型: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_1.md
-                - 第二步->新建配置文件: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_2.md
-              - 示例:单转头单转台机型:
-                - 说明: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_0.md
-                - 第一步->处理输入模型: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_1.md
-                - 第二步->新建配置文件: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_2.md   
-          - 夹具配置:
-              - 进入用户夹具编辑器: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_1.md
-              - 参数解释->夹具数据: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_2.md
-              - 参数解释->调整块数据: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_3.md
-              - 参数解释->运动块: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_4.md   
-              - 用户夹具示例:
-                - 示例1: document/AdminDocument/buildUserFixtureConfig/User_Fixture_Example_1.md
-                - 示例2: document/AdminDocument/buildUserFixtureConfig/User_Fixture_Example_2.md
-          - 自定义AlphaOptimal后处理器: document/other/UserPostProcessor.md
-          - 其它:
-              - 文件&文件夹说明: document/other/index.md
-              - data.ini文件说明: document/other/Instruction_data_file.md
-              - 机床调试:
-                - 校正工件坐标原点: document/other/CalibrationWorkpieceCoordinate.md
-              - RTCP参数调试: document/other/RTCPParameterDebug.md             
-              - 坐标系详解: document/other/CoordinateSystem.md        
-          - 常见问题: 
-              - 主轴预启动逻辑: document/FAQ/主轴预启动逻辑.md
-              - 起始&结束位置: document/FAQ/Program_Start_End.md
-              - 加速度转换: document/FAQ/加速度转换.md
-              - 生成ISO代码失败: document/FAQ/生成ISO代码失败.md
+              - 自定义起始&结束位置: document/FAQ/Program_Start_End.md
+          - 管理员文档:
+            - 配置机床:
+                - 运动链和轴Id解释: document/AdminDocument/buildMachineConfig/ChainAndAxisId.md
+                - 配置文件编辑器: document/AdminDocument/buildMachineConfig/ConfigEditorInterface.md   
+                - 示例:双转头机型: 
+                  - 说明: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_0.md
+                  - 第一步->处理输入模型: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_1.md
+                  - 第二步->新建配置文件: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Dual_Rotation_Chain_2.md
+                - 示例:单转头单转台机型:
+                  - 说明: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_0.md
+                  - 第一步->处理输入模型: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_1.md
+                  - 第二步->新建配置文件: document/AdminDocument/buildMachineConfig/Build_Kinematic_Chain/Build_Single_Rotation_Table_2.md   
+            - 配置夹具:
+                - 进入用户夹具编辑器: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_1.md
+                - 参数解释->夹具数据: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_2.md
+                - 参数解释->调整块数据: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_3.md
+                - 参数解释->运动块: document/AdminDocument/buildUserFixtureConfig/UserFixtureEditor_4.md   
+                - 用户夹具示例:
+                  - 示例1: document/AdminDocument/buildUserFixtureConfig/User_Fixture_Example_1.md
+                  - 示例2: document/AdminDocument/buildUserFixtureConfig/User_Fixture_Example_2.md
+            - 其它:
+                - data.ini文件说明: document/other/Instruction_data_file.md
+                - 校正加工坐标系原点: document/other/CalibrationMCS.md
+                - RTCP参数调试: document/other/RTCPParameterDebug.md             
+                - 坐标系详解: document/other/CoordinateSystem.md
         - 视频: document/videoes/videoes.md
+      - 常见问题: 
+            - 主轴预启动逻辑: document/FAQ/主轴预启动逻辑.md
+            - 加速度转换: document/FAQ/加速度转换.md
+            - 生成ISO代码失败: document/FAQ/生成ISO代码失败.md
   - 试用版本: Authorization_Application.md
   - 下载和更新: download_update.md
   - 关于: about.md
