@@ -102,6 +102,7 @@ nav:
             - 主轴预启动逻辑: document/FAQ/主轴预启动逻辑.md
             - 加速度转换: document/FAQ/加速度转换.md
             - 生成ISO代码失败: document/FAQ/生成ISO代码失败.md
+            - 注册授权失败: document/FAQ/RegistrationAuthorization.md
   - 试用版本: Authorization_Application.md
   - 下载和更新: download_update.md
   - 关于: about.md
