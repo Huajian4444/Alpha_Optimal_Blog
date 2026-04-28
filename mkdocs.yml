@@ -69,8 +69,9 @@ nav:
               - 7.桥接程序段处理: document/UserDocument/HandleCurveItem_ZH.md
               - 8.工件设置: document/UserDocument/ImportWorkPiece_ZH.md
               - 9.用户坐标系设定: document/UserDocument/LocationUserCoordinateSystem_ZH.md
-              - 10.模拟: document/UserDocument/Simulation_ZH.md
-              - 11.生成Iso: document/UserDocument/GenerateIsoCode_ZH.md
+              - 10.多用户坐标系: document/UserDocument/multiUserCoordinateSystem_ZH.md
+              - 11.模拟: document/UserDocument/Simulation_ZH.md
+              - 12.生成Iso: document/UserDocument/GenerateIsoCode_ZH.md
               - 自定义起始&结束位置: document/FAQ/Program_Start_End.md
           - 管理员文档:
             - 配置机床:
