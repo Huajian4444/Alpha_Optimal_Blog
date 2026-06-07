@@ -50,8 +50,7 @@ extra:
 nav:
   - 首页: index.md
   - 产品特性:
-      - 特性: products/index.md
-      - 为什么要用AlphaOptimal: products/WhyUseAlphaOptimal.md
+      - 特性: AlphaOptimalFeatures.md
   - 用户文档:  
       - 安装向导: document/other/InstallationWizard.md
       - 软件目录结构: document/other/DirectoryStructure.md

@@ -1,146 +1,263 @@
-# 软件下载与更新
+<div class="ao-download-page">
 
----
-### 版本3：版本长期支持
+    <div class="container">
+        <div class="page-header">
+            软件下载 & 更新中心
+        </div>
 
-### 主安装程序 V3
-| 日期       | 等级 | 类型     | 版本号  | 下载链接                                      | 更新说明 |
-| ---------- | ---- | -------- | ------- | --------------------------------------------- | -------- |
-|2026-6-7   |重要    | 安装程序| 3.5.0.10 |[点击下载](download/AlphaOptimalSetup_3.5.0.10.rar)|更新说明 2026-6-7|
-|2026-5-30   |重要    | 安装程序| 3.5.0.9 |[点击下载](download/AlphaOptimalSetup_3.5.0.9.zip)|更新说明 2026-5-30|
-|2026-4-28   |重要    | 安装程序| 3.5.0.4 |[点击下载](download/AlphaOptimalSetup_3.5.0.4.rar)|更新说明 2026-4-28|
-|2026-4-9   |重要    | 安装程序| 3.5.0.2 |[点击下载](download/AlphaOptimalSetup_3.5.0.2.rar)|更新说明 2026-4-9|
+        <div class="ao-download-page__intro">
+            <div class="ao-download-page__pills">
+                <span class="ao-download-page__pill"><strong>发布状态</strong>3.x 稳定 / 4.x Beta</span>
+                <span class="ao-download-page__pill"><strong>技术支持</strong>按版本节奏持续更新</span>
+                <span class="ao-download-page__pill"><strong>安装安全</strong>提供必要运行组件</span>
+            </div>
+        </div>
 
----
-### 版本4
+        <div class="tab-header ao-tabs">
+            <button class="tab-item ao-tab active is-active" data-tab="tab1">版本下载 & 更新日志</button>
+            <button class="tab-item ao-tab" data-tab="tab2">工具与组件</button>
+        </div>
 
-### 主安装程序
-| 日期       | 等级 | 类型     | 版本号  | 下载链接                                      | 更新说明 |
-| ---------- | ---- | -------- | ------- | --------------------------------------------- | -------- |
-|2026-6-7   |beta    | 安装程序| 4.0.0.11-beta |[点击下载](download/AlphaOptimalSetup_4.0.0.11.rar)|更新说明 2026-6-7|
+        <div class="tab-content">
+            <!-- 版本下载 + 更新日志 -->
+            <div class="tab-panel show" id="tab1">
+                <h2>软件版本下载</h2>
+                <h3>版本3 - 长期支持版</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>等级</th>
+                            <th>类型</th>
+                            <th>版本号</th>
+                            <th>下载链接</th>
+                            <th>更新说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-6-7</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.10</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.10.rar">点击下载</a></td>
+                            <td>更新说明 2026-6-7</td>
+                        </tr>
+                        <tr>
+                            <td>2026-5-30</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.9</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.9.zip">点击下载</a></td>
+                            <td>更新说明 2026-5-30</td>
+                        </tr>
+                        <tr>
+                            <td>2026-4-28</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.4</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.4.rar">点击下载</a></td>
+                            <td>更新说明 2026-4-28</td>
+                        </tr>
+                        <tr>
+                            <td>2026-4-9</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.2</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.2.rar">点击下载</a></td>
+                            <td>更新说明 2026-4-9</td>
+                        </tr>
+                    </tbody>
+                </table>
 
----
-### 更新说明 2026-6-7
-- #### 版本3
-    - 修复了一些问题
-- #### 版本4
-    - 新增了CAM功能:包含轮廓加工&面加工
-    - 新增了和OSAI系统的通讯
+                <h3>版本4 - Beta测试版</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>等级</th>
+                            <th>类型</th>
+                            <th>版本号</th>
+                            <th>下载链接</th>
+                            <th>更新说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-6-7</td>
+                            <td>beta</td>
+                            <td>安装程序</td>
+                            <td>4.0.0.11-beta</td>
+                            <td><a href="download/AlphaOptimalSetup_4.0.0.11.rar">点击下载</a></td>
+                            <td>更新说明 2026-6-7</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+                <div class="block-gap"></div>
+                <h2>版本更新日志</h2>
 
-### 更新说明 2026-5-30
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-06-07 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li><strong>版本3</strong>：修复若干已知问题</li>
+                            <li><strong>版本4</strong>：新增轮廓加工、面加工CAM功能；新增OSAI系统通讯功能</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-05-30 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>Iso程序段编辑器新增4/5轴共轭角选项，优化多轴镜像姿态控制</li>
+                            <li>新增管理员密码模式，保护核心配置文件</li>
+                            <li>合并刀具编辑与管理界面，优化操作体验</li>
+                            <li>自定义刀具改为导入STL文件，软件自动适配加工长度</li>
+                            <li>修复场景图自动旋转问题</li>
+                            <li>隐藏调试类功能，精简界面</li>
+                        </ul>
+                        <p class="tip">建议逐步升级到此版本</p>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-04-28 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>修复历史问题</li>
+                            <li>优化联刀计算逻辑，支持模型自动避让</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-04-09 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>优化速度规划算法，提升多轴联动流畅度</li>
+                            <li>修复榫头&榫槽加工停顿问题</li>
+                            <li>新增G代码第4轴优化选项</li>
+                            <li>优化桥接曲线创建流程</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-03-06 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>迭代轨迹&速度规划算法，轨迹更光顺</li>
+                            <li>优化桥接曲线自动插入逻辑</li>
+                            <li>修复其他已知问题</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2025-12-28 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>data.ini 新增 OutSpindleNumber 变量</li>
+                            <li>新增联刀曲线控制点配置项</li>
+                            <li>操作面板支持浮动、记忆位置、折叠</li>
+                            <li>内置 data.ini 可视化编辑器</li>
+                            <li>优化多语言翻译</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2025-10-29 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>调整主轴停止逻辑</li>
+                            <li>新增常用功能快捷键</li>
+                            <li>其他问题修复</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2025-10-20 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>升级联刀曲线算法，默认单控制点</li>
+                        </ul>
+                    </div>
+                </div>
 
-1. 新增了**第4、5轴的共轭角选项**.在**Iso类型的程序段编辑器**。当勾选了之后,会自动取它的共轭角
-      - 举例:(以A C结构的机型为例)
-      - 代码:G90 G1 X100 Y30 Z10 C90 A-80.3 F10000
-      - 勾选AX4,代码会变成: G90 G1 X100 Y30 Z10 `C-270` A-80.3 F10000
-      - 勾选AX5,代码会变成: G90 G1 X100 Y30 Z10 C90 `A279.7` F10000
-      - 这样就解决了**镜像功能**必须同时旋转2个轴才能达到改变姿态的目的. 
-2. 管理员模式.
-      - AlphaOptimal 是一款非常开放的软件.用户可以根据需求自定义配置.但是这也导致了软件在交付给用户之后的完全不受控
-      - 管理员模式要求输入密码.才能对一些关键性的配置文件进行编辑.
-      - 如果您是管理员.不知道密码或者遗忘了.请联系我 
-3. 调整了刀具列表的界面.把刀具编辑和管理界面合并到了一起.操作方法保持不变。
-4. 调整了对用户刀具的支持.
-      - 原先用户可以通过导入dxf文件或者直接手动描述刀具轮廓点来实现自定义刀具。
-      - 听取了用户的回馈意见之后.移除了dxf文件和手动描述轮廓的方式.改成了直接导入stl文件.
-      - 用户只需要沿**-Z方向做一个旋转体生成刀具形状**,然后导出为STL文件.既可以导入AlphaOptimal使用
-      - 这种刀具形状，在导出STL文件的时候是固定的。但是实际加工过程中,刀具的长度是变化的。AlphaOptimal会它的长度自动进行调整.以达到模拟的准确性
-5. 修复了场景图自动旋转的问题
-6. 清理了交互界面.对于有些功能.它适用于调试人员，操作人员不会使用到的,做了隐藏处理.让整个界面看起来更简洁。
+                <div class="block-gap"></div>
+                <h3>使用补充说明</h3>
+                <ul>
+                    <li>版本更新：完整安装包直接覆盖安装；小版本可单独替换目录下 AlphaOptimal.exe</li>
+                    <li>核心配置修改：需进入管理员模式并输入密码，遗忘密码请联系管理人员</li>
+                </ul>
+            </div>
 
-`建议逐步改进升级到此版本.`
----
-### 更新说明 2026-04-28
-1. 修复了上一个版本的一些问题
-2. 改进联刀的计算逻辑.当输入了用户模型之后，生成的联刀曲线会参照用户模型进行自动避让
+            <!-- 工具与组件 -->
+            <div class="tab-panel" id="tab2">
+                <h2>工具与组件下载</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>工具名称</th>
+                            <th>下载链接</th>
+                            <th>用途 & 常见问题</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>后处理器生成器</td>
+                            <td><a href="download/Generator.rar">下载</a></td>
+                            <td>旧版配置文件转新版后处理器</td>
+                        </tr>
+                        <tr>
+                            <td>Windows 必要组件</td>
+                            <td><a href="download/VC_redist.x64.rar">下载</a></td>
+                            <td>软件无法启动、缺失dll时安装</td>
+                        </tr>
+                        <tr>
+                            <td>加密狗驱动</td>
+                            <td><a href="download/HASPUserSetup%20v9.15.rar">下载</a></td>
+                            <td>加密狗异常、无法识别时安装</td>
+                        </tr>
+                        <tr>
+                            <td>加密狗授权工具</td>
+                            <td><a href="download/RUS_TXKQM.rar">下载</a></td>
+                            <td>hasp not found / 授权失效时使用</td>
+                        </tr>
+                        <tr>
+                            <td>授权操作视频</td>
+                            <td><a href="download/更新加密狗授权操作.rar">下载</a></td>
+                            <td>授权生成、安装完整教程</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
----
+    <script>
+        const downloadRoot = document.querySelector('.ao-download-page');
 
-### 更新说明 2026-04-09
-1. **速度规划算法的改进**.让多轴联动更流畅
-2. **修复了`榫头&榫槽`的加工**，消除了停顿的情况
-3. 增加了输入G代码的第4轴优化.(可在Iso类型编辑器左侧看到此选项)
-4. 在创建桥接曲线之前,先导入工件模型
+        // Tab 切换
+        const tabItems = downloadRoot.querySelectorAll('.tab-item');
+        const tabPanels = downloadRoot.querySelectorAll('.tab-panel');
+        tabItems.forEach(item => {
+            item.addEventListener('click', () => {
+                tabItems.forEach(t => t.classList.remove('active'));
+                tabItems.forEach(t => t.classList.remove('is-active'));
+                tabPanels.forEach(p => p.classList.remove('show'));
+                item.classList.add('active');
+                item.classList.add('is-active');
+                downloadRoot.querySelector('#' + item.dataset.tab).classList.add('show');
+            });
+        });
 
-
-
----
-#### 更新说明 2026-3-6
-1. **改进了轨迹规划算法**
-      1. 改进了速度规划算法.尤其是在联动状态下,将得到一个更光顺的加工轨迹.无论是加工程序段,或者是联刀轨迹
-      2. 进一步消除了加工过程中的`走走停停`的状态
-2. **更智能的桥接曲线插入**
-3. **修复了一些其它问题**
-
----
-
-#### 更新说明 2025-12-28
-
-1. **新增变量控制主轴号输出**   
-   在 `data.ini` 文件中添加了新的变量，用于控制是否需要强制输出主轴号。具体路径：`config/OutSpindleNumber`。  
-   - 当 `OutSpindleNumber=true` 时，启动主轴指令的前一行将会输出主轴号，例如：
-       <pre><code>
-       T1
-       M03 S15000
-       </code></pre>
-
-    - 当 `OutSpindleNumber=false` 时，则不输出主轴号：
-
-       <pre><code>
-       M03 S15000
-       </code></pre>
-
-2. **新增联刀曲线的默认控制点数**
-      - 在 `data.ini` 文件中添加了新的变量，用于定义默认的联刀曲线的控制点数量。具体路径：`config/Curve_NumberOfThroughPoint`。  
-      - `Curve_NumberOfThroughPoint`的取值范围 [1,3]
-
-3. **优化操作面板**  
-   左侧的操作面板默认浮动，并会自动记忆自身大小。再次打开软件时，将继承上次的位置和大小。支持折叠
-
-4. **新增 `data.ini` 文件编辑器**  
-   进入方法：菜单 -> 设置 -> 数据编辑器。可直接修改 `data.ini` 文件，修改完成后自动保存内容。
-
-5. **更新部分上下文翻译**  
-   提升了软件的多语言支持，优化了部分翻译内容。
-
-6. **调整日志系统**  
-   - 非致命错误：直接显示在屏幕右下角。
-   - 致命错误：输出到 `log.txt` 文件。
-    
----
-
-#### 更新说明 2025-10-29
-
-1. 更改了主轴停止时间的逻辑。
-2. 给常用的操作添加了快捷键。
-3. 修复了一些其它问题。
-4. 更新方法:下载后拷贝到安装路径，替换原先的 `AlphaOptimal.exe` 文件 
-
----
-
-### 2025-10-20更新说明
-1. 升级了联刀曲线的算法，调整为默认中间一个控制点（之前是两个控制点）
-
----
-
-
-
-### 工具与组件
-
-- [后处理器生成器](download/Generator.rar)  
-  <span style="color:gray;">用于将旧版配置文件转换为新版后处理器文件</span>
-
-- [Windows 必要组件](download/VC_redist.x64.rar)  
-  <span style="color:gray;">软件无法打开且无提示，或者提示缺少*.dll文件,安装此下载</span>
-
-- [加密狗驱动](download/HASPUserSetup%20v9.15.rar)  
-  <span style="color:gray;">加密狗插入电脑后灯不常亮时，请安装此驱动。</span>
-
-- [获取加密狗授权信息](download/RUS_TXKQM.rar)  
-  <span style="color:gray;">如 log.txt 最后一行为 "hasp not found"，请重新授权。</span>
-
-- [更新加密狗授权操作视频](download/更新加密狗授权操作.rar)  
-  <span style="color:gray;">包含生成授权信息及应用新授权的操作视频</span>
-
----
+        // 折叠面板
+        const titles = downloadRoot.querySelectorAll('.collapse-title');
+        titles.forEach(t => {
+            t.addEventListener('click', () => {
+                const c = t.nextElementSibling;
+                c.classList.toggle('show');
+                c.classList.toggle('is-open');
+                t.querySelector('span').innerText = c.classList.contains('show') ? '点击收起' : '点击展开';
+            });
+        });
+    </script>
+</div>
