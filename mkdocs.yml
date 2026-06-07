@@ -73,6 +73,7 @@ nav:
               - 11.模拟: document/UserDocument/Simulation_ZH.md
               - 12.生成Iso: document/UserDocument/GenerateIsoCode_ZH.md
               - 自定义起始&结束位置: document/FAQ/Program_Start_End.md
+              - 自定义刀具操作: document/UserDocument/自定义刀具操作步骤.md
           - 管理员文档:
             - 配置机床:
                 - 运动链和轴Id解释: document/AdminDocument/buildMachineConfig/ChainAndAxisId.md
