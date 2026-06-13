@@ -36,12 +36,20 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>2026-6-7</td>
+                            <td>2026-6-13</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.11</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.11.rar">点击下载</a></td>
+                            <td>更新说明 2026-6-13</td>
+                        </tr>
+                        <tr>
+                            <td>2026-6-9</td>
                             <td>重要</td>
                             <td>安装程序</td>
                             <td>3.5.0.10</td>
                             <td><a href="download/AlphaOptimalSetup_3.5.0.10.rar">点击下载</a></td>
-                            <td>更新说明 2026-6-7</td>
+                            <td>更新说明 2026-6-9</td>
                         </tr>
                         <tr>
                             <td>2026-5-30</td>
@@ -96,7 +104,19 @@
 
                 <div class="block-gap"></div>
                 <h2>版本更新日志</h2>
-
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-06-13 <span>点击展开</span></div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>增加了OSAI系统的通讯功能</li>
+                            <li>新增了MARCO/TCPB,现在允许给每一个主轴增加一个RTCB补偿</li>
+                            <li>修复了删除刀具对话框的错误</li>
+                            <li>修复RTCP调试器.没有把wcs转mcs的错误,同时也修复了对循环动作的处理</li>
+                            <li>修复带预启动机型,在预启动下一个刀具的时候,强制输出主轴号未生效的错误</li>
+                            <li>调整通讯-坐标计算器-转用户坐标时精度过大导致出现科学计数法的错误.现在默认小数点后2位</li>  
+                        </ul>
+                    </div>
+                </div>
                 <div class="collapse-item ao-collapse">
                     <div class="collapse-title ao-collapse__title">2026-06-07 <span>点击展开</span></div>
                     <div class="collapse-content ao-collapse__content">
