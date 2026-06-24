@@ -2440,12 +2440,28 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>2026-6-7</td>
+                            <td>2026-6-22</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.12</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.12.rar">点击下载</a></td>
+                            <td>更新说明 2026-6-22</td>
+                        </tr>
+                        <tr>
+                            <td>2026-6-13</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.11</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.11.rar">点击下载</a></td>
+                            <td>更新说明 2026-6-13</td>
+                        </tr>
+                        <tr>
+                            <td>2026-6-9</td>
                             <td>重要</td>
                             <td>安装程序</td>
                             <td>3.5.0.10</td>
                             <td><a href="download/AlphaOptimalSetup_3.5.0.10.rar">点击下载</a></td>
-                            <td>更新说明 2026-6-7</td>
+                            <td>更新说明 2026-6-9</td>
                         </tr>
                         <tr>
                             <td>2026-5-30</td>
@@ -2500,7 +2516,28 @@
 
                 <div class="block-gap"></div>
                 <h2>版本更新日志</h2>
-
+                <div class="collapse-item ao-collapse">
+                    <div class="collapse-title ao-collapse__title">2026-06-13 <span>点击展开</span></div>
+                     <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>极致的优化了轨迹.此版本可以完全消除停顿(必须是支持预启动机型)</li>
+                            <li>增加了一个按钮(关于/showCoordinate),当模拟的时候,是否需要在右下角显示坐标</li>
+                            <li>修复了双击文件打开的错误</li>
+                            <li>修复了配置文件编辑器：主轴参数-共轴 未翻译的错误</li>
+                            <li>添加了CNC操作的翻译</li>
+                        </ul>
+                    </div>
+                    <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>增加了OSAI系统的通讯功能</li>
+                            <li>新增了MARCO/TCPB,现在允许给每一个主轴增加一个RTCB补偿</li>
+                            <li>修复了删除刀具对话框的错误</li>
+                            <li>修复RTCP调试器.没有把wcs转mcs的错误,同时也修复了对循环动作的处理</li>
+                            <li>修复带预启动机型,在预启动下一个刀具的时候,强制输出主轴号未生效的错误</li>
+                            <li>调整通讯-坐标计算器-转用户坐标时精度过大导致出现科学计数法的错误.现在默认小数点后2位</li>  
+                        </ul>
+                    </div>
+                </div>
                 <div class="collapse-item ao-collapse">
                     <div class="collapse-title ao-collapse__title">2026-06-07 <span>点击展开</span></div>
                     <div class="collapse-content ao-collapse__content">
@@ -2638,6 +2675,13 @@
 
     <script>
         const downloadRoot = document.querySelector('.ao-download-page');
+
+        // 下载链接走浏览器直连下载，避免被 instant 导航拦截。
+        downloadRoot.querySelectorAll('a[href^="download/"]').forEach(link => {
+            link.setAttribute('download', '');
+            link.setAttribute('data-no-instant', '');
+            link.setAttribute('rel', 'noopener');
+        });
 
         // Tab 切换
         const tabItems = downloadRoot.querySelectorAll('.tab-item');
@@ -2868,7 +2912,7 @@ RTCP参数调试=RTCP parametre ayarı
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.path", "navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.language", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.path", "navigation.tabs", "navigation.instant", "navigation.top", "navigation.language", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
