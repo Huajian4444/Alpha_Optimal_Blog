@@ -36,6 +36,14 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>2026-6-22</td>
+                            <td>重要</td>
+                            <td>安装程序</td>
+                            <td>3.5.0.12</td>
+                            <td><a href="download/AlphaOptimalSetup_3.5.0.12.rar">点击下载</a></td>
+                            <td>更新说明 2026-6-22</td>
+                        </tr>
+                        <tr>
                             <td>2026-6-13</td>
                             <td>重要</td>
                             <td>安装程序</td>
@@ -106,6 +114,15 @@
                 <h2>版本更新日志</h2>
                 <div class="collapse-item ao-collapse">
                     <div class="collapse-title ao-collapse__title">2026-06-13 <span>点击展开</span></div>
+                     <div class="collapse-content ao-collapse__content">
+                        <ul>
+                            <li>极致的优化了轨迹.此版本可以完全消除停顿(必须是支持预启动机型)</li>
+                            <li>增加了一个按钮(关于/showCoordinate),当模拟的时候,是否需要在右下角显示坐标</li>
+                            <li>修复了双击文件打开的错误</li>
+                            <li>修复了配置文件编辑器：主轴参数-共轴 未翻译的错误</li>
+                            <li>添加了CNC操作的翻译</li>
+                        </ul>
+                    </div>
                     <div class="collapse-content ao-collapse__content">
                         <ul>
                             <li>增加了OSAI系统的通讯功能</li>
@@ -254,6 +271,13 @@
 
     <script>
         const downloadRoot = document.querySelector('.ao-download-page');
+
+        // 下载链接走浏览器直连下载，避免被 instant 导航拦截。
+        downloadRoot.querySelectorAll('a[href^="download/"]').forEach(link => {
+            link.setAttribute('download', '');
+            link.setAttribute('data-no-instant', '');
+            link.setAttribute('rel', 'noopener');
+        });
 
         // Tab 切换
         const tabItems = downloadRoot.querySelectorAll('.tab-item');

@@ -18,7 +18,6 @@ theme:
     - navigation.path
     - navigation.tabs
     - navigation.instant    # 快速切换页面体验 
-    - navigation.instant.prefetch
     - navigation.top
     - navigation.language
     - toc.integrate
